@@ -1,0 +1,37 @@
+name: Fetch and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Runs on 3, 9, 15 and 21 o'clock every day
+    - cron: 0 3,9,15,21 * * *
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      DOTNET_NOLOGO: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.x.x
+
+      - name: Fetch
+        run: dotnet run -c Release --project HKModLinksCN
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          clean: true
+          single-commit: true
+          branch: dist
+          folder: dist
+          commit-message: "chore: deploy"
