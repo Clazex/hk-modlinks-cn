@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyTitle>HKModLinksCN</AssemblyTitle>
+		<Description>Mirror creation tool for hk-modding/modlinks</Description>
+		<Version>0.1.0</Version>
+		<Authors>Clazex</Authors>
+		<Copyright>Copyright © 2021 Clazex</Copyright>
+
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>HKModLinksCN</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+</Project>
