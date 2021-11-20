@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using System.Web;
 using System.Xml;
 
@@ -85,18 +86,29 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 		}
 	}
 	string link = linkNode.InnerText;
-	linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(name)}";
 
 #pragma warning restore CS8600, CS8602
 
 	Task downloadModtask = new HttpClient()
-		.GetStreamAsync(link)
+		.GetAsync(link)
 		.ContinueWith(task => {
-			Stream res = task.Result;
-			using (Stream modFile = File.Create($"dist/mods/{name}")) {
-				res.CopyTo(modFile);
+			HttpResponseMessage res = task.Result;
+
+			ContentDispositionHeaderValue? diposition = res.Content.Headers.ContentDisposition;
+			string fileName = diposition?.FileName ?? link[(link.LastIndexOf('/') + 1)..];
+			fileName = fileName.Trim();
+			fileName = fileName.StartsWith('"') ? fileName[1..] : fileName;
+			fileName = fileName.EndsWith('"') ? fileName[0..(fileName.Length - 1)] : fileName;
+			foreach (char c in Path.GetInvalidFileNameChars()) {
+				fileName = fileName.Replace(c, '_');
 			}
-			res.Dispose();
+			linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(fileName)}";
+
+			Stream resStream = res.Content.ReadAsStream();
+			using (Stream modFile = File.Create($"dist/mods/{fileName}")) {
+				resStream.CopyTo(modFile);
+			}
+			resStream.Dispose();
 		})
 		.ContinueWith(_ => Console.WriteLine($"Downloaded {name}"));
 
