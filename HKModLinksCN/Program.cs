@@ -3,6 +3,12 @@ using System.Web;
 using System.Xml;
 
 const string urlBase = "https://hk-modlinks.clazex.net/";
+List<string> skipList = new() {
+	"clazex.net",
+	"vercel.app",
+	"jsdelivr.net"
+};
+
 List<Task> tasks = new();
 try {
 	Directory.Delete("dist", true);
@@ -86,6 +92,10 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 		}
 	}
 	string link = linkNode.InnerText;
+
+	if (skipList.Exists(i => link.Contains(i))) {
+		continue;
+	}
 
 #pragma warning restore CS8600, CS8602
 
