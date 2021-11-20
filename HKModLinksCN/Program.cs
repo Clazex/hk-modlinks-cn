@@ -1,4 +1,4 @@
-﻿using System.Web;
+using System.Web;
 using System.Xml;
 
 const string urlBase = "https://hk-modlinks.clazex.net/";
@@ -13,11 +13,13 @@ Directory.CreateDirectory("dist/mods");
 
 XmlDocument apiLinksXml = new();
 apiLinksXml.PreserveWhitespace = true;
-apiLinksXml.Load(
-	new HttpClient()
-		.GetStreamAsync("https://cdn.jsdelivr.net/gh/hk-modding/modlinks/ApiLinks.xml")
-		.Result
-);
+using (HttpClient client = new()) {
+	apiLinksXml.Load(
+		client
+			.GetStreamAsync("https://cdn.jsdelivr.net/gh/hk-modding/modlinks/ApiLinks.xml")
+			.Result
+	);
+}
 
 #endregion
 
@@ -25,11 +27,13 @@ apiLinksXml.Load(
 
 XmlDocument modLinksXml = new();
 modLinksXml.PreserveWhitespace = true;
-modLinksXml.Load(
-	new HttpClient()
-		.GetStreamAsync("https://cdn.jsdelivr.net/gh/hk-modding/modlinks/ModLinks.xml")
-		.Result
-);
+using (HttpClient client = new()) {
+	modLinksXml.Load(
+		client
+			.GetStreamAsync("https://cdn.jsdelivr.net/gh/hk-modding/modlinks/ModLinks.xml")
+			.Result
+	);
+}
 
 #endregion
 
@@ -43,6 +47,7 @@ XmlNode macNode = apiLinksNode["Mac"].ChildNodes[1];
 XmlNode windowsNode = apiLinksNode["Windows"].ChildNodes[1];
 
 XmlNode[] apiLinkNodes = { linuxNode, macNode, windowsNode };
+
 IEnumerable<Task> apiDownloadTasks = apiLinkNodes
 	.Select(node => new HttpClient()
 		.GetStreamAsync(node.InnerText)
@@ -57,6 +62,7 @@ IEnumerable<Task> apiDownloadTasks = apiLinkNodes
 		})
 		.ContinueWith(_ => Console.WriteLine($"Downloaded {node.ParentNode.Name} api"))
 	);
+
 tasks = tasks.Concat(apiDownloadTasks).ToList();
 
 #pragma warning restore CS8600, CS8601, S8602
@@ -87,10 +93,9 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 		.GetStreamAsync(link)
 		.ContinueWith(task => {
 			Stream res = task.Result;
-			Stream modFile = File.Create($"dist/mods/{name}");
-			
-			task.Result.CopyTo(modFile);
-			modFile.Dispose();
+			using (Stream modFile = File.Create($"dist/mods/{name}")) {
+				res.CopyTo(modFile);
+			}
 			res.Dispose();
 		})
 		.ContinueWith(_ => Console.WriteLine($"Downloaded {name}"));
