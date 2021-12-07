@@ -133,3 +133,5 @@ foreach (Task task in tasks) {
 
 apiLinksXml.Save("dist/ApiLinks.xml");
 modLinksXml.Save("dist/ModLinks.xml");
+
+File.WriteAllText("dist/UPDATE_TIME", DateTime.UtcNow.ToString("s") + "Z\n");
