@@ -23,7 +23,7 @@ apiLinksXml.PreserveWhitespace = true;
 using (HttpClient client = new()) {
 	apiLinksXml.Load(
 		client
-			.GetStreamAsync("https://cdn.jsdelivr.net/gh/hk-modding/modlinks/ApiLinks.xml")
+			.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ApiLinks.xml")
 			.Result
 	);
 }
@@ -37,7 +37,7 @@ modLinksXml.PreserveWhitespace = true;
 using (HttpClient client = new()) {
 	modLinksXml.Load(
 		client
-			.GetStreamAsync("https://cdn.jsdelivr.net/gh/hk-modding/modlinks/ModLinks.xml")
+			.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ModLinks.xml")
 			.Result
 	);
 }
