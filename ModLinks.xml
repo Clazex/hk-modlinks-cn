@@ -1,0 +1,3389 @@
+<?xml version="1.0"?>
+<ModLinks xmlns="https://github.com/HollowKnight-Modding/HollowKnight.ModLinks/HollowKnight.ModManager" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://raw.githubusercontent.com/HollowKnight-Modding/HollowKnight.ModLinks/main/Schemas/ModLinks.xml">
+    <!--
+    <Manifest>
+        <Name>Test Name</Name>
+        <Description>Test description</Description>
+        <Version>0.0.0.0</Version>
+        Only one of these two
+        <Links>
+            <Linux SHA256="0000000000000000000000000000000000000000000000000000000000000000"><![CDATA[https://linux.link]]></Linux>
+            <Mac SHA256="0000000000000000000000000000000000000000000000000000000000000000"><![CDATA[https://mac.link]]></Mac>
+            <Windows SHA256="0000000000000000000000000000000000000000000000000000000000000000"><![CDATA[https://windows.link]]></Windows>
+        </Links>
+            <Link SHA256="0000000000000000000000000000000000000000000000000000000000000000"><![CDATA[https://multiplatform.link]]></Link>
+        <Dependencies>
+            <Dependency>Another mod's name that this mod depends on</Dependency>
+        </Dependencies>
+        <Integrations>
+            <Integration>Another mod's name, like the dependency list, but not a hard dependency, but extra stuff when it is installed alongside</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Either of: 'Boss', 'Cosmetic', 'Expansion', 'Gameplay', 'Library', 'Utility'</Tag>
+        </Tags>
+    </Manifest>
+    -->
+    <Manifest>
+        <Name>Nightmare Spark</Name>
+        <Description>Adds a Grimm Troupe themed charm with various charm synergies.</Description>
+        <Version>1.0.0.1</Version>
+            <Link SHA256="6ee864b0d370d849506bd75daca3f2485e58c5ecd55daa023c8bf61284ba5f97">
+                <![CDATA[https://hk-modlinks.clazex.net/mods/Nightmare.Spark.zip]]></Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>SFCore</Dependency>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/RiverRobot/Nightmare-Spark]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Heal On Wall</Name>
+        <Description>Makes it so you can Heal On Walls</Description>
+        <Version>1.0.1.0</Version>
+            <Link SHA256="B10F83E58F54B184A634FB41F6E11A99E962F2C8D6F19EA99685D8D48BD1873B">
+                <![CDATA[https://hk-modlinks.clazex.net/mods/Heal_On_Wall.zip]]></Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Zickles/Heal_On_Wall]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Better Void Heart</Name>
+        <Description>Keep Kingsoul soul regen when you pick up Void Heart.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="afac1879df76d5cc52993a87f629a9ec6ae5abcc7f1eeafa6f7a6fca748ae2b4">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Better.Void.Heart.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/epiceuropean/Better-Void-Heart]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>RadianceExtras</Name>
+        <Description>Adds Extra Things to the Abs Rad Fight</Description>
+        <Version>1.0.0.0</Version>
+            <Link SHA256="6FD9808BD0E1A31F315E3A794CA5F322D4AABB55AFFCCB0C2566B0BD585FE973">
+                <![CDATA[https://hk-modlinks.clazex.net/mods/RadianceExtras.zip]]></Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Zickles/RadianceExtras]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Dead Quirrel</Name>
+        <Description>He's dead. Stop being in denial. Now featuring support for whether or not he has a mask.</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="419f8358d1dfaaa863d8c18a405d979e0e38db0614c0c043dde142ca7e80ecb0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DeadQuirrel.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Hoo-Knows/HollowKnight.DeadQuirrel]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Challenge Mode</Name>
+        <Description>A mod that adds randomly selected challege modifiers to Godhome with several customization options. See ReadMe for info on modifiers and more.</Description>
+        <Version>1.0.1.2</Version>
+        <Link SHA256="909911BFCFF057F4CE5318FD07D3119E86464BA4218C6C5C2A737BDB05A16ADA">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ChallengeMode.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Hoo-Knows/HollowKnight.ChallengeMode]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Damage Values</Name>
+        <Description>Shows damage numbers when striking an enemy.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="620ffc698da598e819f3c96755929aede40f26f222e4f06761623da192c5e3e9"><![CDATA[https://hk-modlinks.clazex.net/mods/DamageValues.zip]]></Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/jngo102/DamageValues]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>FallDamage</Name>
+        <Description>Player takes fall damage proportional to their max health and time spent falling.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="3707FD192891049B8105E7ECAC63098C759B1937CD56099D165F161F25B5178E">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FallDamage.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Makeit-Hardcore/HK-FallDamage]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HueShifter</Name>
+        <Description>Uses shaders to change the map colours. Can also make everything rainbows.</Description>
+        <Version>0.2.1.0</Version>
+        <Link SHA256="7C8B4129C2864EDAEA52F545DFA21AD2FF9932EBAB227FD1C4D0BD257A576360">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HueShifter.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/beesnation/HueShifter]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CriticalSlash</Name>
+        <Description>Makes nail arts deal extra damage and return control faster if released at the earliest moment.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="FF220F390F5AF66F146EB0192ED8323B72526D17C769D57AF95C2684EBFAD569">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CriticalSlash.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/beesnation/CriticalSlash]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Mask Maker Notches</Name>
+        <Description>A mod that adds a few buyable Charm Notches in Mask Maker's room.</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="345DF009A1A46CFCFC1864A05F7D4E4681083035D6315CD14B4BEF16CCA29707">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MaskMakerNotches.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/IronLucario2012/MaskMakerNotchesMod/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Randomizer 4</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>AbsoluteZote</Name>
+        <Description>A new GPZ mod boss.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="1aad22dd9c6d90a37bb754dd2ead381e8f473f973189d4faa840648b94118394">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/AbsoluteZote.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/yunjord/HollowKnight.AbsoluteZote/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HitboxOnly</Name>
+        <Description>Show only hitboxes and hide all sprites. This provides a new experience for several bosses since attack anticipation is no longer visible.</Description>
+        <Version>1.3.0.0</Version>
+        <Link SHA256="a10a68b088628c6c4420067555e20b9cbc12e1238af26696cd1c0383b6c2dc17">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HitboxOnly-v1.3.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/yunjord/HollowKnight.Abstraction/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>PureZote</Name>
+        <Description>Enabled Grey Prince Zote to summon Eternal Ordeal and upgraded its skills.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="52fa80b5fb01ae7d756f0b9af3958c4f79cb95b826d14a3d5fef2692b77f65a5">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PureZote.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/yunjord/PureZote/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>SteelSoulHUD</Name>
+        <Description>Enables the Steel Soul HUD in normal mode.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="C411A892B6409537EF01625EE3B42722D4C0FBA4F051316096939CE0DD46A7AF">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SteelSoulHUD.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/dpinela/SteelSoulHUD/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Fyrenest</Name>
+        <Description>Adds 30 new charms, renames areas, and creates new lore to explore! Read the README.txt for info on how to get charms normally. If you don't want to get them this way, go into the Fyrenest mod menu! Near the bottom, it should say "Give all Charms"</Description>
+        <Version>2.12.45.65</Version>
+        <Link SHA256="74302dbf315a5cf592408d78cdb43f1c3f8490ae5923d866f058803f1f4f8c1e">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Fyrenest.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+            <Dependency>Satchel</Dependency>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BubkisLord/Fyrenest/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Transcendence</Name>
+        <Description>Adds 14 new charms with various abilities. Can be used with the randomizer.</Description>
+        <Version>1.2.1.0</Version>
+        <Link SHA256="C2E0C49A33FF5A666CD6F22A3741CD5CAB7A1934ADFFEA7C9FEA88E836BFEAFB">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Transcendence.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/dpinela/Transcendence/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RainbowEggs</Name>
+        <Description>A randomizer add-on that makes Rancid Eggs more colorful.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="5732CF5A903913D6E2D107F1425EA0B777A9405653F8427470FEF2A54F02BB45">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RainbowEggs.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/dpinela/RainbowEggs/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandoZoomZoom</Name>
+        <Description>A randomizer add-on that makes early movement and geo collection a bit faster.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="B3EAA867B756A3773FFD57C8C222A71C6A043BFC4CA28BFC5F849CF4E7A3F3A7">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandoZoomZoom.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/dpinela/RandoZoomZoom/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>BenchwarpSpoilerCloak</Name>
+        <Description>A Benchwarp add-on that hides yet-to-be-visited bench names in the menu.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="A570AA49EAE949A91C7F5192A80F70F741247C92696B9658A48D7FFE66039B5E">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/BenchwarpSpoilerCloak.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Benchwarp</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/dpinela/BenchwarpSpoilerCloak/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>QoL</Name>
+        <Description>A collection of various quality of life improvements.</Description>
+        <Version>4.7.0.0</Version>
+        <Link SHA256="38339EE83049FCE48B3105A96A799EB7C85E5C0D2CBCE4A5885FEF32B6E4738A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/QoL.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.QoL/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ScreenshotMachine</Name>
+        <Description>A mod to better create Hollow Knight screenshots.</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="703EA0E4E1BA3269725A121CFAA77BC37CE61A1CD1E0A4E44D4993699F7B5043">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ScreenshotMachine.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BasedJellyfish11/HollowKnight.ScreenshotMachine/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>AsciiCamera</Name>
+        <Description>Applies a shader to the camera which makes the game output as ascii characters.</Description>
+        <Version>2.2.0.0</Version>
+        <Link SHA256="FF83C558EDD7E6CC4B46728F129AC0D6D4990BE3F0D49FC7948827F4B2A41690">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/AsciiCamera.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.AsciiCamera/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HollowTwitch</Name>
+        <Description>Allows Twitch Chat to use tons of commands that spice up and vary gameplay.</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="80B2F3F42532FCB2D7C4D518BC41FDCF95F0B09377C2830ED2690C0498669AD2">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HollowTwitch.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Sid-003/HKTwitch/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Darkness</Name>
+        <Description>Makes every room into a dark room (akin to rooms which require lantern without it).</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="E6B94D0DD0338B6CD83070DAF6556CDA5098D4006DB2ED8F3B746CB810933344">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Darkness.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.Darkness/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>God Soul</Name>
+        <Description>Makes the game really, really hard</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="052652F86B16890D6882C0715A35E87995C6CF78DAA892E961CB2F4D7ED2986F">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GodSoul.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Nexade/God-Soul-Mod/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Random Pantheons</Name>
+        <Description>Randomizes Godhome’s Pantheons so bosses appear in random order.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="80973705F6CE894544006A72D9A813B14633CF78D4004A66EE11E4EE0BAEF533">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomPantheons.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.RandomizedPantheons/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Mantis Gods</Name>
+        <Description>Significantly buffs the Mantis Lords fight.</Description>
+        <Version>1.3.0.0</Version>
+        <Link SHA256="92F0B56DCFBB2D0984F42A0B8614742075453A690F2051C06C379E1874CC85C8">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Mantis.Gods.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.Mantis-Gods/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Sanic</Name>
+        <Description>Allows changing the game timescale.</Description>
+        <Version>2.1.0.0</Version>
+        <Link SHA256="E725843E202475184BD1B842B6E5DF2CF455B5A9F6082683F2CE44DBF6B78CE3">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Sanic.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.Sanic/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ModConsole</Name>
+        <Description>In-game C# REPL which allows you to easily test code.</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="2429F59254FD05D37C2A5EE1681E7122BBF171F8EBD93DF68BA422B5CCF70928">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ModConsole.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.ModConsole/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>The Pain of the Path</Name>
+        <Description>Allows the player to complete the Path of Pain backwards, starting just above the final drop to the Kingsmoulds.</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="5982D2E598E7716A93BDD6A10D699F78296779C4408A81E8B91C25E96476F057">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ThePainOfThePath.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.ThePainOfThePath/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Pale Prince</Name>
+        <Description>Overhaul of the Pure Vessel fight with a significant increase in difficulty</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="D5A5AF96618B468F5E48E5661B9857BEEA7213B12528E23456F80129E42E5655">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Pale.Prince.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.Pale-Prince/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Vasi</Name>
+        <Description>A library with some utility classes.</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="B93FA7ECDF40D5F91F942ACFD31CD2A5243551720C96E18DDE99FD64919162EC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Vasi.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.Vasi/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Hell Mod</Name>
+        <Description>Various nerfs to the player and buffs to the enemies to increase the game difficulty.</Description>
+        <Version>2.0.0.0</Version>
+        <Link SHA256="CBED75606E848BC7F0255EA00C9641B19716EA72C12F74F37D25558A1A608DCF">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HellMod.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/fifty-six/HollowKnight.HellMod/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HowwowKnyight</Name>
+        <Description>Twanswates aww of de text in Howwow Knyight into de much supewiow UwU wanguage, incwuding menyus, usew intewface and in-game diawogues! OwO</Description>
+        <Version>3.8.2.0</Version>
+        <Link SHA256="8d1fcbfddd1912e1124d14c6f87c97732b4479ea742e0431acba88e005f23b94">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HowwowKnyight.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/DDRM-VGV/HowwowKnyight/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Transtrans</Name>
+        <Description>Tiktiks for trans rights</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="DF2EB160F5536485470C8C43045DC26F0BFAD31D67DDD826F55AAFC0090D9292">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/hbilqn.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://discord.com/channels/283467363729408000/327461802311155714/821819089898176554: https://cdn.discordapp.com/attachments/327461802311155714/821819089944838154/Transtrans.cs]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>CompassAlwaysOn</Name>
+        <Description>Makes it so the Knight's icon always appears on the map, even if Wayward Compass isn't in your inventory.</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="b6d50f37b941bdd32ff4097ae0204c864a0c0559ec2d7c98954a1afe6dad46dc">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CompassAlwaysOn.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.CompassAlwaysOn/]]>
+        </Repository>
+        <Integrations>
+            <Integration>AdditionalMaps</Integration>
+            <Integration>HKMP</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>Kronk</Name>
+        <Description>Simple object counter used for speedruns. Mainly used for Kronk% (all levers).</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="4a8a895c5ec9df0286cb457c397777c9489fb26bdb04ccc4639d4ba60476034c">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Kronk.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.Kronk/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Menderbug's Revenge</Name>
+        <Description>Kill the knight whenever you break a background object.</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="8d91f09a627e7713a44332841e12eb0891e1d029069172a7ba420f4e59dc12d3">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MenderbugsRevenge.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.MenderbugsRevenge/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Godseeker Memory Jump</Name>
+        <Description>Face right when dreamnailing the godseeker to warp to the hidden memory, even if you've been there before.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="7598a72f05a618a386aaf18d6288dfe559f60df64552cffd9db5f690a0286227">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GodseekerMemoryJump.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.GodseekerMemoryJump/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>BingoUI</Name>
+        <Description>Automatic tracking of bingo goals for randomizer and speedrun bingo races.</Description>
+        <Version>2.1.2.2</Version>
+        <Link SHA256="5CDB06B79CB8275928AEE832BB78D82694A33744CD5250CDCDA41872D416031E">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/BingoUI.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.BingoUI/]]>
+        </Repository>
+        <Integrations>
+            <Integration>ItemChanger</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>EssenceAlways</Name>
+        <Description>Choose between always or never dropping an essence when killing an enemy (if you have dream nail).</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="36DB612E4C8B0F6D85ADE8CFF030F297A7831DB953861CBF0576F8352A219FEF">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/EssenceAlways.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.EssenceAlways/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Invincibility Monitor</Name>
+        <Description>Grants invincibility in some scenarios.</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="9276AC103E78CC2139CD0242619E419569D5EFD5098AF638A44D46A2411ECE74">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/InvincibilityMonitor.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.InvincibilityMonitor/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>MylaFlower</Name>
+        <Description>Protect Myla from the infection by bringing her a flower.</Description>
+        <Version>0.9.0.0</Version>
+        <Link SHA256="2c01ca8ca0b6a552ef47e8edb902d50430c29ec19052fb2a371eaa07044b0916">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MylaFlower.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.MylaFlower/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>SkillUpgrades</Name>
+        <Description>Provides a collection of upgrades and tweaks to the Knight's Skills. Visit the Mod Menu to enable them.</Description>
+        <Version>0.11.0.0</Version>
+        <Link SHA256="c2a86952cb1331621e60a0d746d8dcf21aabca285a62bded75023a2882dddb7d">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SkillUpgrades.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.SkillUpgrades/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Randomizer 4</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>CondensedSpoilerLogger</Name>
+        <Description>Creates a Condensed Spoiler Log in the Rando Logs directory with the key information about the seed.</Description>
+        <Version>1.3.0.1</Version>
+        <Link SHA256="a24c4224b48ac26155b54f4a0f82cfe69859fed3e79c8dc7bd1d6ecff3834fb5">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CondensedSpoilerLogger.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.CondensedSpoilerLogger/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandoPlus</Name>
+        <Description>Add-on for Randomizer 4 that adds more Randomization options; for example, randomize Mr Mushroom locations.</Description>
+        <Version>1.4.1.0</Version>
+        <Link SHA256="6f831ed02951e3cfc63f4886b36b4f190c8348645adebe5423835e883555d5c2">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandoPlus.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.RandoPlus/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Randomizer 4</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>FountainPreview</Name>
+        <Description>Add-on for ItemChanger that makes the basin fountain show the item it's going to give.</Description>
+        <Version>0.1.1.0</Version>
+        <Link SHA256="7015e5e201a10d4175d0d340a388247b2bb063f9beb5055ac2ff100afe19114a">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FountainPreview.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.FountainPreview/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Randomizable Levers</Name>
+        <Description>Randomizer 4 addon that adds the option to randomize levers. Activate lever rando in the Connections menu of Randomizer 4.</Description>
+        <Version>1.2.1.1</Version>
+        <Link SHA256="c7ebfb05aec70292dad2a6622b30cb8f3b32e4389fbfaaf693bb99809e208daa">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomizableLevers.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.RandomizableLevers/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Randomizer 4</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>TrandoPlus</Name>
+        <Description>Add-on for Randomizer 4 that adds more options to Transition Rando; for example, randomize only doorway transitions.</Description>
+        <Version>1.3.1.0</Version>
+        <Link SHA256="69e2240755a19bf45c8b15cc90de862d4d6e061182996c1cae33212745843700">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/TrandoPlus.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.TrandoPlus/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RecentItemsDisplay</Name>
+        <Description>Add-on for ItemChanger (and Rando) which displays recently obtained pickups in the top-right of the screen.</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="8ba5b2350aafb7dd6fdb8c7e6df8e62268d70cb7913b4e13e0c932f2ae2c05c4">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RecentItemsDisplay.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.RecentItemsDisplay/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandomizerSettingsRandomizer</Name>
+        <Description>Add-on for Randomizer 4 that allows you to randomize settings. See the README for info on how to select settings to randomize.</Description>
+        <Version>0.3.0.1</Version>
+        <Link SHA256="18b8c5e4ddbc91eac9757cccfddae7f5f3ad1968036f4ea883a735b32f0bcf5b">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomizerSettingsRandomizer.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.RandomizerSettingsRandomizer/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ReopenCityDoor</Name>
+        <Description>Opens the locked door between Fungal Wastes and City (above Elder Hu's grave / near the elevator to Crossroads).</Description>
+        <Version>0.2.1.0</Version>
+        <Link SHA256="69f969ff4da11aad13f45a20ddee56f4a46f63ea199b2d63d5ce5662e1293750">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ReopenCityDoor.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.ReopenCityDoor/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Randomizer 4</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>PlayerDataManager</Name>
+        <Description>Override player data values (for example, always set `hasQuill` to false). Having DebugMod is helpful, but not required.</Description>
+        <Version>0.5.0.0</Version>
+        <Link SHA256="a722f9ca8d948ffc9941f9c3f314b0aed2f769c3b16d68d208ac18f87762c4a7">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PlayerDataManager.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/flibber-hk/HollowKnight.PlayerDataManager/]]>
+        </Repository>
+        <Integrations>
+            <Integration>DebugMod</Integration>
+        </Integrations>
+    </Manifest>
+    <Manifest>
+        <Name>Benchwarp</Name>
+        <Description>Mod for selecting and warping to benches. Also allows placing benches and warping to room transitions.</Description>
+        <Version>3.2.1.0</Version>
+        <Link SHA256="4040062459FA2ADC55731F8840AC8E804C5BA25C636D3B4B2B4A7BE6F6944594">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Benchwarp.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.BenchwarpMod/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Randomizer 4</Name>
+        <Description>Mod for randomizing items and/or transitions, with numerous customization options.</Description>
+        <Version>4.0.8.0</Version>
+        <Link SHA256="A2D98FBE68E72211C4AB325465C9280A124BA7A20B589A6B827B11FEE0F534CA">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomizerMod.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>RandomizerCore</Dependency>
+            <Dependency>Benchwarp</Dependency>
+            <Dependency>QoL</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/RandomizerMod/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ItemChanger</Name>
+        <Description>Mod which handles editing items and locations for other mods.</Description>
+        <Version>2.0.8.0</Version>
+        <Link SHA256="50CF51E90CFB83779668008BB33A4BABBD5EAABCE280F673DD6080EF25CC5221">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ItemChanger.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.ItemChanger/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>MenuChanger</Name>
+        <Description>Mod which handles editing the main menu for other mods.</Description>
+        <Version>1.1.4.0</Version>
+        <Link SHA256="C29D3C11DDD701545A3EBF3D015567ED30A408146A7800119776F80A0D25E58E">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MenuChanger.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.MenuChanger/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandomizerCore</Name>
+        <Description>A library for randomizer logic and algorithms.</Description>
+        <Version>1.0.5.0</Version>
+        <Link SHA256="21A722820510A038C6C2FD611920BBC01273E2762F830E50C24AF86C4BF8924D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomizerCore.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/RandomizerCore/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ItemChangerDataLoader</Name>
+        <Description>Mod for creating backups of randomizer saves and launching plandos.</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="12430C9A18AE97002BC62518000D0D53A32C77474AE37B167B1E521A8AD752AC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ItemChangerDataLoader.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/ItemChangerDataLoader/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ICExtraDeployers</Name>
+        <Description>ItemChanger add-on which preloads more objects. Use as a dependency for IC files which place custom Baldurs, gates, and more.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="807B92C878FB57FD60604A7B653583B7F39981C3540713E8B10245C445738271">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ICExtraDeployers.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/ICExtraDeployers/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>CustomPoolInjector</Name>
+        <Description>A Randomizer 4 add-on for providing user-defined item pools for randomizing different item combinations.</Description>
+        <Version>1.0.2.0</Version>
+        <Link SHA256="80784C5928C4C12CF0D48D095A03C51069CF3BED22E1D637302C3F81C747EF67">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomPoolInjector.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/CustomPoolInjector/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>CustomLogicInjector</Name>
+        <Description>A Randomizer 4 add-on for providing user-defined logic edits.</Description>
+        <Version>1.0.2.0</Version>
+        <Link SHA256="801DF39065F5F44CA463EBFD18A9BB6142BB2BB24C2582C6B3DBB4136B59DD79">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomLogicInjector.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/CustomLogicInjector/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>CustomGroupInjector</Name>
+        <Description>A Randomizer 4 add-on for providing user-defined item groups for different split group randomizer options.</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="97953B441641361C41A2B8C0F30DBA022BF751A718004111A721129C8BB0DC03">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomGroupInjector.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/CustomGroupInjector/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>BenchRando</Name>
+        <Description>A Randomizer 4 add-on for randomizing benches to new locations and randomizing the ability to warp to benches as items. Currently in beta.</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="5B2BB929CBADCAFAD0B9050082B3362DE3CC1190C26784F0AFECA23A8367F1E5">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/BenchRando.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Benchwarp</Dependency>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>RandomizerCore</Dependency>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/BenchRando/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ItemSync</Name>
+        <Description>A RandomizerMod 4 add-on for sharing item pickups between players.</Description>
+        <Version>2.4.2.0</Version>
+        <Link SHA256="B46FD92D521E502F563691C28895ABD70598B5BEA11A2DD154D3C2143C9D4899">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ItemSync.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+            <Dependency>MultiWorldLib</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Shadudev/HollowKnight.MultiWorld/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>MultiWorldLib</Name>
+        <Description>A library for ItemSync and MultiWorld network transmission.</Description>
+        <Version>1.0.0.5</Version>
+        <Link SHA256="32F87F5BE847128C3890DB4AD787867BB26FAF8757B4B88CA5C9F361500DD87D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MultiWorldLib.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Shadudev/HollowKnight.MultiWorld/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>PaletteSwapper</Name>
+        <Description>Mod which changes room color tint.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="3B2B2F1CBEA97DF19E308A15842189E47145653E9B08B68C834859E90966C702">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PaletteSwapper.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.PaletteSwapper/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>InfiniteNotches</Name>
+        <Description>Togglable mod for enabling infinite charm notches.</Description>
+        <Version>2.0.0.1</Version>
+        <Link SHA256="07C0F10F060E57D579E15C1426F07BD0065081B2EEB0A24E38A14CCD71BA7765">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/InfiniteNotches.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.InfiniteNotches/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>EasyMode</Name>
+        <Description>Togglable mod for making the game slightly easier.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="D5402B10D124C6278FE897CB34912D0F3AD6CD2659D21B8423BACFFECE2B9152">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/EasyMode.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.EasyMode/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>LoadNormalizer</Name>
+        <Description>Mod which extends loads to a user-defined cap, to synchronize loading for races.</Description>
+        <Version>2.1.0.0</Version>
+        <Link SHA256="125DFDACDA85550ED73F7A4A625182D219A4097E007F93503F3F7139B4FE6B67">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/LoadNormalizer.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/homothetyhk/HollowKnight.LoadNormalizer/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Randomizer Map S</Name>
+        <Description>A Randomizer 4 overhaul of the World Map to help find item and transition checks.</Description>
+        <Version>2.6.2.0</Version>
+        <Link SHA256="D182FB1730448C1C130746E2914DF22D7B3A0D302E92BFDF73BB3E6B2D99BF98">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MapModS.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+            <Dependency>RandomizerCore</Dependency>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>ConnectionMetadataInjector</Dependency>
+            <Dependency>MagicUI</Dependency>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/syyePhenomenol/HollowKnight.MapModS/]]>
+        </Repository>
+        <Integrations>
+            <Integration>AdditionalMaps</Integration>
+            <Integration>Randomizable Levers</Integration>
+            <Integration>RandoPlus</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>AdditionalMaps</Name>
+        <Description>Adds white palace and godhome maps. The white palace one is next to the bench in the big room. The godhome one is next to the bench above the pantheons.</Description>
+        <Version>1.5.1.0</Version>
+        <Link SHA256="620D1428C4FB4B4D90ECF4F6778A7633BC0A77003B75229241043194C86A3386">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/AdditionalMaps.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/AdditionalMaps/]]>
+        </Repository>
+        <Integrations>
+            <Integration>HKMP</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Gameplay</Tag>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>BenchWarpFix</Name>
+        <Description>When benchwarping into a scene without a bench, instead of softlock drops you into dirtmouth. Probably doesn't work with glitched runs.</Description>
+        <Version>1.5.1.1</Version>
+        <Link SHA256="D22C6C90EFEFBB649314586EFD3A8FAACDD2D772CA0917FC3F701B574DE17FDE">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/BenchWarpFix.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/BenchWarpFix/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>BlindRadiance</Name>
+        <Description>Makes background darker in selected scenes to make foreground objects more visible.</Description>
+        <Version>1.5.1.0</Version>
+        <Link SHA256="9111BBC3F5C4B059EDE9C06F3BD26C9DC09DAF8500336CD70B153187B6E92BED">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/BlindRadiance.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/BlindRadiance/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CustomBgm</Name>
+        <Description>Allows customization of background music. See its readme for a how-to.</Description>
+        <Version>1.5.1.0</Version>
+        <Link SHA256="A937757DBB7FA6EF809D9A7F12D43F40D4073F52FB1F490BDEFE7854861D131D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomBgm.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/CustomBgm/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CustomSaveArt</Name>
+        <Description>Makes white palace save art funny. Literally nothing else.</Description>
+        <Version>1.5.0.1</Version>
+        <Link SHA256="8302BE9F5D2FB9464310E9F74E11A7581A99185B81662DC09449BDC426A7C060">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomSaveArt.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/CustomSaveArt/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>EnemyChanger</Name>
+        <Description>Allows to dump and replace enemy textures. Refer to the readme on how to do that.</Description>
+        <Version>1.5.2.0</Version>
+        <Link SHA256="F1193A62CF17066B449C096CB5ECBAAE4528D6DD5EB97BDB756074E22AB77AF0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/EnemyChanger.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/EnemyChanger/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>FireIsSmolBrain</Name>
+        <Description>Adds a soul totem to dirtmouth and blocks off boss arenas.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="5A7FC5C3AC551B0258BB01D1BE42D6D1073DF18C0FC767327A6497B65F80A12B">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FireIsSmolBrain.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/FireIsSmolBrain/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>FuryFix</Name>
+        <Description>Tries to fix fury for 1 max health saves.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="7B30BF03780F7E5CA3C83D9D61B5EA19B6C6A0314B04874FAD1392ED7A1FF1D8">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FuryFix.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/FuryFix/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>GeoLog</Name>
+        <Description>Logs all geo locations in the game.
+Takes hours to load into the game.</Description>
+        <Version>1.5.1.0</Version>
+        <Link SHA256="ABA4861BAA7FFDBF398AD22D6CE317FC41E5579843F80EFFD83B7C6355BE0093">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GeoLog.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/GeoLog/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HKHKHKHKHK</Name>
+        <Description>VVVVVVV but in HK. Flip gravity with the R key.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="4C8765071FA4722BC9D553F18B355282BC44B1595E5DCCF61CB4AA08E9B156F6">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKHKHKHKHK.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/HKHKHKHKHK/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>LanguageSupport</Name>
+        <Description>Allows additional languages to be supported. Doesn't allow for some characters of other languages yet.</Description>
+        <Version>1.5.1.0</Version>
+        <Link SHA256="F1C9853EFF0361019DCAEE19CE652EB972127C08711701E71D5C79C679F99609">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/LanguageSupport.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/LanguageSupport/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>MenuThemesInGame</Name>
+        <Description>Applies the menu color correction to gameplay. Breaks immersion.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="8AF2B8C9FCBD5076F846F88BB2527ADF1DFE2EC47D77DCD7581D821831890CB0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MenuThemesInGame.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/MenuThemesInGame/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>MoreHealing</Name>
+        <Description>Adds more healing charms.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="D6C69911FAB117B18995E749EEB204BF0E5B3E1F3141BD952139CFDC48585638">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MoreHealing.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/MoreHealing/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>NailsmithBackPay</Name>
+        <Description>Get your geo back from the nailsmith after upgrading your nail.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="16188DCD98860FCE814F075966936B434F8FAC7A1556881FFD8CD29A1030E40A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/NailsmithBackPay.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/NailsmithBackPay/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>NeverMuffle</Name>
+        <Description>Removes the muffling sound effect when taking damage.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="b14e6174a37cb08def7d52c3c3b392e54b3e26b9fbdf989d2fc322b778787d15">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/NeverMuffle.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/NeverMuffle/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Pail Curt</Name>
+        <Description>This is the Pale Court mod.
+Enjoy!</Description>
+        <Version>1.5.1.0</Version>
+        <Link SHA256="544657FE1F245DBBD18CC27EF79923AF15604C5BCD4B8A82F536D035337AAD16">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Pail-Curt.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>FrogCore</Dependency>
+            <Dependency>SFCore</Dependency>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/Pail-Curt/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>RadiantMenu</Name>
+        <Description>Adds a radiant menu theme to the game.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="A68216F941A07CBBCBC07915833A9D859A397F3058511235FB93150528ED696D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RadiantMenu.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/RadiantMenu/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>RedoBirthplace</Name>
+        <Description>Redo the Birthplace cutscene.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="7944573C1D3567406D2D298F166204B3C8A6B03C2D30E248A43612B0B31653CC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RedoBirthplace.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/RedoBirthplace/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ResetCharmNotches</Name>
+        <Description>Reset charm notches and charm notch cost.</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="69F8A5979D2C208933229FE7AD1FCFFB3201B07AF26C7958FCED9A5CDAF6834A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ResetCharmNotches.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/ResetCharmNotches/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>SFCore</Name>
+        <Description>Library mod used by other mods.</Description>
+        <Version>1.5.3.3</Version>
+        <Link SHA256="0C3FE6F3039396C23CAFB18172F18D40E01EDB389D82001D7A392616E7E69375">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SFCore.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/SFCore/]]>
+        </Repository>
+        <Tags>
+            <Tag>Library</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Test of Teamwork</Name>
+        <Description>Adds a Path of Pain style section to the White Palace.
+Start by talking to people in and around dirtmouth.
+This is a singleplayer mod. The "teamwork" refers to in-game events.</Description>
+        <Version>1.5.76.57640</Version>
+        <Link SHA256="87ECF6401AAE0F4FB701FDA79727D187F03692E29E7D317F65729CA5EB3DD198">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/TestOfTeamwork.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/SFGrenade/TestOfTeamwork/]]>
+        </Repository>
+        <Integrations>
+            <Integration>HKMP</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Boss</Tag>
+            <Tag>Expansion</Tag>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>RandomGravityChange</Name>
+        <Description>A mod that randomly changes gravity periodically or on key press.</Description>
+        <Version>0.0.1.3</Version>
+        <Link SHA256="9359F9A1625CB206FD57D1AC88E245679797814DE9276E752C9B042384FE2C00">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomGravityChange.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>MagicUI</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/RandomGravityChange/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandomTeleport</Name>
+        <Description>A mod that randomly teleports you to another scene periodically, on key press or on damage.</Description>
+        <Version>0.5.0.0</Version>
+        <Link SHA256="F1BD5D86B43264890DA6E3AB8DA3331F4D4E312BD71107992B25A5CC6D4D6412">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomTeleport.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>MagicUI</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/HollowKnight.RandomTeleport/]]>
+        </Repository>
+        <Integrations>
+            <Integration>DebugMod</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>DebugMod</Name>
+        <Description>Allows for debug tools and features like no clip, invincibility, removing and giving items and abilities.</Description>
+        <Version>1.4.9.4</Version>
+        <Link SHA256="6A2482DE7A8419A969DEACB1A4E7B45E4A2C606DAA747961ECF6FA9AF2E1E3B3">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DebugMod.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/HollowKnight.DebugMod/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>SpeedRunQoL</Name>
+        <Description>A debug Add On that adds new keybinds that are QoL for speedrunning practice. Currently adds Position Save States, Glitched Binds, Force Extra Uumuu attack and radiance quick reload</Description>
+        <Version>0.5.5.0</Version>
+        <Link SHA256="1A6B441448BDCD02932CAEE020688A8F9A7B313694B79168AA0B466C0EAEDA74">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SpeedRunQoL.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>DebugMod</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/SpeedRunQoL/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>MoreSaves</Name>
+        <Description>Allows for infinite saves. Uses modmenu to provide other features such as backup/restore, rename, lock and edit values in saves. Note: Editing the current save you are in now takes effect in game</Description>
+        <Version>0.7.6.0</Version>
+        <Link SHA256="831451CC6FA51E11F5E08D93D15A01BEA27D51488A7DBBD44DBA98ED4FB8F95A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MoreSaves.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/MoreSaves/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Gorb Plus</Name>
+        <Description>A mod that adds an additional attack when fighting gorb: a nail barrage.</Description>
+        <Version>0.0.1.0</Version>
+        <Link SHA256="CC969A0F1369A43B43B7A94BAEC22FF18BFF0E2B17DA2EDFEE4AB44D61B57031">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GorbPlus.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/GorbPlus/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HKMP HealthDisplay</Name>
+        <Description>An addon for HKMP. Displays the amount of health and/or soul other players in the room have</Description>
+        <Version>0.0.3.0</Version>
+        <Link SHA256="C9CD569C1499B519BEA56AC8D54F8CF96EE10E013D5DA2CEC287CAFADF5A5D07">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKMP_HealthDisplay.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>MagicUI</Dependency>
+            <Dependency>HKMP</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/HKMP.HealthDisplay/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Gravity Mod</Name>
+        <Description>Adds gravity to all objects</Description>
+        <Version>1.0.0.1</Version>
+        <Link SHA256="F5A14902F87BCA4CDBD07CDA87B03C8EF1C41FB9C088513618AFCF66674D6A7E">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GravityMod.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/GravityMod/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>GlassSoul</Name>
+        <Description>Makes you die in one hit. Also adds option in modmenu to increases damage dealt by 1 for each extra health</Description>
+        <Version>1.1.0.2</Version>
+        <Link SHA256="115A3109E0D05DF1FBFACC5D5E4559A5047B017BDF1C86508E255F71F2ECDA2D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GlassSoul.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/GlassSoulMod/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Toggle Rando Split Options</Name>
+        <Description>An extension to the mod Toggleable bindings. It adds split claw, split cloak and cursed nail to the binding list.</Description>
+        <Version>0.1.0.1</Version>
+        <Link SHA256="67419ED2CB0C60F2BF6CB5F7B9E52ED4A930B8AA880EB4913DFE802051ABE530">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Toggle-Rando-Split-Options-master.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Toggleable Bindings</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/Toggle-Rando-Split-Options/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Hide Mod List</Name>
+        <Description>Allows you to hide your modlist</Description>
+        <Version>0.0.2.2</Version>
+        <Link SHA256="B26A4F659897F64512976AA41608E75CC3843A2DC366D7A2E29AF0089060821A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HideModList.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/HollowKnight.HideModList/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Additional Challenge</Name>
+        <Description>A mod that allows you to use 46 different effects to make your game more challenging. There are 4 types of effects (Persistent, Cooldown, Boss Attack, Enemy Follow) that can be enabled from modmenu. There is also a choas mode that randomly selects effects to happen periodically.</Description>
+        <Version>0.0.2.0</Version>
+        <Link SHA256="F7F59F315168668CC4D2BA9572A530FCE801B5A2589B5C232468447EFFC3143A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/AdditionalChallenge.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>DebugMod</Dependency>
+            <Dependency>Satchel</Dependency>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/AdditionalChallenge]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Poorly Translated</Name>
+        <Description>Poorly Translated Hollow Knight. All text in the game is run through a chain of google translates. Available in English, German, Spanish, French, Italian and Chinese. Note: the English translations were revamped from the 1.4 version to be translated even more poorly</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="74FFC82CA39FEA4F8C6CAB675AD51B69216CB3061F65028F86CE127F974A53A0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/TranslationMod.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/TheMulhima/HollowKnight.TranslationMod/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>WeaverCore</Name>
+        <Description>Core mod required for mods built with WeaverCore, such as Inferno King Grimm and Corrupted Kin</Description>
+        <Version>1.1.0.1</Version>
+        <Link SHA256="8A9C3CD2C627FA9D2BE73FE4E244492BA922FBF78B8F46515D32EE04127FA475">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/WeaverCore.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/nickc01/WeaverCore/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Inferno King Grimm</Name>
+        <Description>A mod that significantly buffs Nightmare King Grimm into a multi-phase fight. It also includes a hard mode that can be configured on the main menu</Description>
+        <Version>4.1.0.3</Version>
+        <Link SHA256="9a5ee870dcdfcd3409eb91e780c722422992b8ac208cefc20ca64dc54986a0d5">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/InfernoKingGrimm.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>WeaverCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/nickc01/Inferno-King-Grimm/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Corrupted Kin</Name>
+        <Description>A mod that significantly changes up the Lost Kin bossfight</Description>
+        <Version>1.2.0.3</Version>
+        <Link SHA256="594E39BB697A372C84DE0054236B55E327466103594D0CB7CA3CD11299AC4C45">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CorruptedKin.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>WeaverCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/nickc01/Corrupted-Kin/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HKMP</Name>
+        <Description>Hollow Knight Multiplayer allows people to host games and let others join them in their adventures.</Description>
+        <Version>2.1.0.0</Version>
+        <Link SHA256="B972670EA5620B45881D7D117937C5A6169078B5D95071DF6A6E6C3D4292F8D1">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKMP.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Extremelyd1/HKMP/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HKMP Prop Hunt</Name>
+        <Description>An HKMP add-on that adds Prop Hunt to multiplayer games.</Description>
+        <Version>0.0.0.8</Version>
+        <Link SHA256="0d9c13a1c306e4ffa619eba48526b27780465eaa344b07606e9f0d9714aa875f">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PropHunt.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKMP</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/jngo102/HKMP.PropHunt/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HKVR</Name>
+        <Description>Play Hollow Knight in virtual reality.</Description>
+        <Version>0.0.0.0</Version>
+        <Link SHA256="7AC26132874B7E63576B43A792D674D94CD434D39A507C9D40CDD1756E5273E9">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKVR.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/jngo102/HKVR/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Enemy HP Bar</Name>
+        <Description>Adds skinnable HP bars to every enemies and bosses in the game.</Description>
+        <Version>3.0.5.0</Version>
+        <Link SHA256="cbb6cb64165c0a1be11a908e40cb1b456d1dcd9ba708b514119035e8aec8c510">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/EnemyHPBar.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/Enemy-HP-Bars/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Custom Knight</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>MagicUI</Name>
+        <Description>A core mod to help other mods build UIs. Does nothing on its own.</Description>
+        <Version>1.5.8240.8287</Version>
+        <Link SHA256="2E68A53F264D256AFDE79A10E062E0EB6CBA03BA7AC12FE2295129E5004528CC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MagicUI.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/BadMagic100/HollowKnight.MagicUI/]]>
+        </Repository>
+        <Tags>
+            <Tag>Library</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ConnectionMetadataInjector</Name>
+        <Description>A core mod to allow randomizer-supplemental mods like RandoStats and MapModS to get custom metadata from connections without requiring hard dependencies.</Description>
+        <Version>1.1.8107.6258</Version>
+        <Link SHA256="317408B3A964A4A429B726229FA2584A428156D6CE1E019DF3EC5001D5742A65">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ConnectionMetadataInjector.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+            <Dependency>RandomizerCore</Dependency>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BadMagic100/ConnectionMetadataInjector/]]>
+        </Repository>
+        <Tags>
+            <Tag>Library</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>RandoStats</Name>
+        <Description>A randomizer-supplemental mod that provides detailed check and obtain stats on the completion screen.</Description>
+        <Version>1.2.8172.816</Version>
+        <Link SHA256="18DD268383ED8738EC66F39D89662CCD00A583E362744DEB8A8FF35879B40769">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandoStats.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+            <Dependency>RandomizerCore</Dependency>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>ConnectionMetadataInjector</Dependency>
+            <Dependency>MagicUI</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BadMagic100/HollowKnight.Rando4Stats/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>MajorItemByAreaTracker</Name>
+        <Description>A randomizer connection that adds a semi-spoiler randomizer game mode with an in-game tracker.</Description>
+        <Version>1.1.3.0</Version>
+        <Link SHA256="7925F78F43E71D0C9E003C1945CE3E275DEEA24DD87BAF715DD5E479251C81D0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MajorItemByAreaTracker.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+            <Dependency>RandomizerCore</Dependency>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>ConnectionMetadataInjector</Dependency>
+            <Dependency>MagicUI</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BadMagic100/MajorItemByAreaTracker/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>RandoChecksCounter</Name>
+        <Description>A Hollow Knight mod that provides a live counter of locations checked.</Description>
+        <Version>1.0.8166.12031</Version>
+        <Link SHA256="35E1D809501E60EB7DB8A923FCCDD2FC53165BC5E06E6B3C56AF24A526114EEE">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandoChecksCounter.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MagicUI</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BadMagic100/RandoChecksCounter/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>GhostHunter</Name>
+        <Description>A mod that shows the positions of other player's enemies during multiplay.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="e662064d40a87289ec2ce131c506f2a0d60d666b3e3f97959210d547e847199e">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GhostHunter.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKMP</Dependency>
+            <Dependency>HkmpPouch</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/GhostHunter/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>EmoteWheel</Name>
+        <Description>A mod that allows using custom emotes (also works during multiplay if server has HkmpPouch).</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="67c9993cb72ef342dd65c43d11ab1c6f95ce9d153c81711a4968196e746b3d7c">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/EmoteWheel.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HkmpPouch</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/EmoteWheel/]]>
+        </Repository>
+    </Manifest>
+    
+    <Manifest>
+        <Name>MultiplayerEvents</Name>
+        <Description>A mod that adds some Multiplayer interactions.</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="3fa8fdec4f06ac10fcc758b7cea1e17caa6e9877b5a160dcd54c1fc0a54065bc">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MultiplayerEvents.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HkmpPouch</Dependency>
+            <Dependency>MagicUI</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/MultiplayerEvents/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HkmpPouch</Name>
+        <Description>A dependency mod for client side hkmp addons.</Description>
+        <Version>0.3.0.0</Version>
+        <Link SHA256="e6ed29dd8563bd9467dd7e688613553bb4b93947e2dc6590e3d47fac582e9ec6">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HkmpPouch.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKMP</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/HkmpPouch/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Satchel</Name>
+        <Description>A bag of tricks for other mods, does nothing by itself, allows other mods to do cool things.</Description>
+        <Version>0.8.3.0</Version>
+        <Link SHA256="8dfe6e346a8a4d6658cfa46de7155b82983d6c84065580abb08df63d1194f516">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Satchel.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/Satchel/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Custom Knight</Name>
+        <Description>Allows changing skins for the player, enemies, bosses and rooms</Description>
+        <Version>2.1.1.0</Version>
+        <Link SHA256="62bfb948e291cc1a1a8a658bfb25a802c864a06f6939f77b9b7b58e1699b2d60">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomKnight.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/HollowKnight.CustomKnight/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Asymmetric Knight</Name>
+        <Description>A Custom Knight Addon that allows left and right looking knight sprites to be different.Add a Knight_left.png, Sprint_left.png and Unn_left.png to use.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="10b73c19553ed35ea0a735e4275151773bdc36148ea0b78cba0019075b52fbbb">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/AsymmetricKnight.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>Custom Knight</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/HollowKnight.CustomKnight/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandomCompanions</Name>
+        <Description>A Custom Knight Addon that allows hatchlings and weaverlings to use all available skins</Description>
+        <Version>3.1.0.0</Version>
+        <Link SHA256="f46ceeb631c44ba32343aca3befa1577d48acbf948594917070e8f79257e3b01">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomCompanions.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>Custom Knight</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/RandomCompanions/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>SmolKnight</Name>
+        <Description>Allows changing size of the knight</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="a34d3e172d7f55b7fa30c6a2c5fd0b90568cb93c393de81391e63d1c0d730d39">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SmolKnight.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/Smolknight/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ModScript</Name>
+        <Description>Allows writing scripts in JavaScript to mod the game.</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="88ce4a7a4b288d5bb217b59b75344d2d1cb1b202485f241ce5de687a1038739d">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ModScript.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/ModScript/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HKmote</Name>
+        <Description>Use emotes during multiplayer</Description>
+        <Version>1.4.0.0</Version>
+        <Link SHA256="3a1240551a4cdbb16aefc25cc915f826384ae31af1e0eaf30edb23aed9e554b8">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Hkmote.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/hkmote/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Hat</Name>
+        <Description>Wear Hats</Description>
+        <Version>1.4.0.0</Version>
+        <Link SHA256="1d13310b3523b7b7b314a05384901f6003eb7d1eabb7c42f26e31ce1434b11f7">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Hat.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/hat.hollowknight/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Memesong</Name>
+        <Description>Play some meme audio clips as you play (can add or remove clips to make stream friendly)</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="87b5b70760556884519f0fde957259091d7fec20f791aafac1f8ad07f4a3e330">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Memesong.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/yoink-city/memesong/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>GrubTrain</Name>
+        <Description>Grubs as Companions</Description>
+        <Version>0.5.0.0</Version>
+        <Link SHA256="acc9fe4b27718c665a67f635a5e142e496485a380ea3622d21fde2ec450065f2">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GrubTrain.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/GrubTrain/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Konpanion</Name>
+        <Description>A tiny knight companion</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="5cd94844234e1deb2427b20c59c474861cc65ae0b17c40d9084d6ec60a4924c8">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Konpanion.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/PrashantMohta/Konpanion/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Glass Cannon Mod</Name>
+        <Description>Makes everything one shot, including you</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="9021c10217fa8e9f8e981e1681b2f79f5cbbc6af1d66aec52b6b76406d4b9d09">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GlassCannonMod.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Nexade/GlassCannon/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>FrogCore</Name>
+        <Description>Library mod containing stuff for adding journal entries and npcs</Description>
+        <Version>0.0.2.1</Version>
+        <Link SHA256="64F26D72CF41B533AED3848DA5B5007BC324B6BB844EF4E6A301281EEC98AEDC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FrogCore.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/RedFrog6002/FrogCore/]]>
+        </Repository>
+    </Manifest>
+    <!--
+    <Manifest>
+        <Name>Grassy Knight</Name>
+        <Description>Tracks and shows you how much grass you've cut.</Description>
+        <Version>0.1.4.0</Version>
+        <Link SHA256="3ddf5cf525b546ff367bccfdd8b020e5411574d6649da0bfa774c0d7e0cd8afc">
+            <![CDATA[https://github.com/mandar1jn/GrassyKnight/releases/download/1.4.0/GrassyKnight.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/mandar1jn/GrassyKnight/]]>
+        </Repository>
+    </Manifest>
+    -->
+    <Manifest>
+        <Name>Unity Explorer</Name>
+        <Description>Useful tool for mod developers to view and edit how the game is structured.</Description>
+        <Version>4.8.2.0</Version>
+        <Link SHA256="7cc932572f3a8946233ae8f95233a65df277e59c9aa73194d5a9eddcc382c195">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/UExplorer.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/jngo102/UExplorer/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Fast Travel</Name>
+        <Description>Travel anywhere within Hallownest by clicking on the map.</Description>
+        <Version>1.0.0.3</Version>
+        <Link SHA256="1afb30c740935feee9023ff35084fc59b586f46b4ba5b60149d4ed735b2e85e6">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FastTravel.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/jngo102/HollowKnight.FastTravel]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Game Object Dump</Name>
+        <Description>Allows extraction of atlases, sprites, and audio clips from game objects in the scene.</Description>
+        <Version>1.0.0.1</Version>
+        <Link SHA256="7767c1d49d56a8615c3fdbff71647b7946344ee04d07d0079737bdecad37ce79">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GODUmp.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/jngo102/HollowKnight.GODump/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Gatling Aspid</Name>
+        <Description>Makes primal aspids wield gatling miniguns; configuration options available.</Description>
+        <Version>1.0.0.2</Version>
+        <Link SHA256="c9686e82bca1ef891ce6c0c1e88c06f46f289807ffe955a5e604dc93fd4147e8">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GatlingAspid.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/jngo102/GatlingAspid/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Aspid Queen</Name>
+        <Description>Adds a primal aspid boss fight to the Hall of Gods.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="b1a5ad2b62ddb78b86d9587c251fcc96ade2e0934539b39c05b298230b2c63d5">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/AspidQueen.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/jngo102/AspidQueen]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>SkipToRadiance</Name>
+        <Description>Makes HK instantly go to phase 4 after dying to The Radiance. Useful for practicing modded Radiance or just if you're too slack to fight HK over and over.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="A777BA08101E516D6F73F6D4BC6F4F20AA61D2DEC8CC785F113C1A8227B8DDBC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SkipToRadiance.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Nexade/SkipToRadiance/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Toggleable Bindings</Name>
+        <Description>Adds the ability to activate/deactivate individual Godhome bindings at any time and lets other developers create custom bindings easier.</Description>
+        <Version>0.1.3.0</Version>
+        <Link SHA256="7BC8BBBA3F9A77F9782A4737C674B2D61D71633122858B3E6A9082215FEBED47">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ToggleableBindings.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Unordinal/HollowKnight.ToggleableBindings/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HollowPoint</Name>
+        <Description>Gives the player a gun, reworks charms and abilities to play around the concept of gun usage</Description>
+        <Version>1.4.0.0</Version>
+        <Link SHA256="3BA0DE9C735F59047723C5872496604F1BCFB20431D800179A12BC7C5A6A544C">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HollowPoint.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/RedFrog6002/Hollow-Point/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Golden Godhome</Name>
+        <Description>Reskins bosses in the Godhome to have more golden designs and details</Description>
+        <Version>0.1.1.0</Version>
+        <Link SHA256="c3d2fe63c8dbde25f0d85b8ee780f4d2651e4992e5e59df52da8fc9efda8c031">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GoldenGodhome.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/mandar1jn/GoldenGodhome/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Hall of Gods Extras</Name>
+        <Description>Adds The Hollow Knight and The Radiance to the Hall of Gods.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="E354058D15193D900C2AE435204E8CC83540E205BFA7CD94FBA601B55CA64338">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HoGExtras.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/jngo102/HoGExtras/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Custom Trial</Name>
+        <Description>Allows creation of custom trials for the Colosseum of Fools.</Description>
+        <Version>1.0.0.1</Version>
+        <Link SHA256="292DFA846B05B35DC712AFC8B5201FC219EC9C36060B8D996FDD9AB8D81C35BD">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomTrial.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/jngo102/HollowKnight.CustomTrial/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>SilkSong (but not really)</Name>
+        <Description>Allows the player to play as hornet.</Description>
+        <Version>0.4.0.1</Version>
+        <Link SHA256="a607e38182dbbd5577d93c4e6eafad2f1f4a5766a24f2addd0557e10b89eab47">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Silksong.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/yoink-city/Silksong_bnr/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Discord Rich Presence</Name>
+        <Description>Formerly known as "HollowKnightDRPC", this mod adds detailed game status to your Discord profile (when clicked on the username).</Description>
+        <Version>1.1.1.0</Version>
+        <Link SHA256="5AA298AF8BF8F19618531BB0F06BA1F673EF9A3659D4B1A9251C524F30AAD861">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HollowKnightDRPC.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/KaanGaming/HollowKnightDRPC/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Aspidnest</Name>
+        <Description>Adds many unkillable enemies such as Primal Aspids, Crystal Hunters, Loodles, Mantis Petras, Hive Soldiers, Hive Guardians, Squits, Mossflies, Flukefeys and Lance Sentries that follow you in the entirety of Hallownest. This mod is configurable to your own liking in the options page of this mod.</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="18AB3C055F7DD6AA1912311C8D20E68A0CEA3EC487396570586C342F1D2F01B5">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Aspidnest.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/KaanGaming/Aspidnest/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Osmi</Name>
+        <Description>A library mod providing utilities for other mods</Description>
+        <Version>0.1.7.0</Version>
+        <Link SHA256="8F49F1832F730686B3D5004B3D705A125621CFC67A717607D5051ED6919F5989">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Osmi.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.Osmi/]]>
+        </Repository>
+        <Tags>
+            <Tag>Library</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>GodSeekerPlus</Name>
+        <Description>Various tweaks and utilities to enhance your Godhome experience</Description>
+        <Version>0.20.1.0</Version>
+        <Link SHA256="D1CFA76A75FB3B9B0AEDD04222EE96A09318DA50233CCCF3CCA0D9D8FBAD7774">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GodSeekerPlus.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.GodSeekerPlus/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CompanionCloth</Name>
+        <Description>Let Cloth accompany and fight with you all the way</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="9E501A37CE1CD44B9A8EDEB128E6695FBA698D57B2A2AB1E3450D7C51F49C90C">
+            <![CDATA[https://jmp.clazex.net/hk-mod/companion-cloth/v0.1.0]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.CompanionCloth]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HealthShare</Name>
+        <Description>Let some bosses use shared health, API part has moved to Osmi</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="E45EDF18EAF0764FDDFCA5B9CB88D7A2D8D2A9CCAB80936963CA3F3CD76CA559">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HealthShare.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.HealthShare/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Everwatchers</Name>
+        <Description>A mod boss based on Watcher Knights, allowing you to fight all of them simutanuously and add more of them</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="5F6EC894BCD143942B26A674E2ABE0541F5DAAE838B48A1909C0B2983936ACC0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Everwatchers.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.Everwatchers/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>TribeOfBattle</Name>
+        <Description>A boss based on Sisters of Battle and Traitor Lord</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="809385B3951B9E99669EF48AF1074BA962E7A9ED1E9B3AFC501A2930F45421E0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/TribeOfBattle.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.TribeOfBattle/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Mantis Gods</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Crystalblobbles</Name>
+        <Description>A boss based on Oblobbles</Description>
+        <Version>1.0.2.0</Version>
+        <Link SHA256="E12194BE6FF701593B557B6DF662E350E87FB6C5B8EF9807DAA9217843950EAC">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Crystalblobbles.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.Crystalblobbles/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ContinueCountdown</Name>
+        <Description>Adds a countdown upon continuing</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="09A00F1E7830A8C11978B93F071D075C28C11EBCA06297520BA721BB9641B22B">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ContinueCountdown.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>MagicUI</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.ContinueCountdown/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CharmPreset</Name>
+        <Description>A mod that allows saving and loading charm presets</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="6061AE21D0EBED62BDFD4E88FCD9CB34B7AC34A5E93BF27C83155655BBFD231C">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CharmPreset.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.CharmPreset/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>DoubleJumpFix</Name>
+        <Description>A mod to fix the notorious bug that the double jump is sometimes not properly canceled</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="B6BC91C0657D05ADC94B5ECDF410E6753256FE283108B63E5B102C39CDE5F447">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DoubleJumpFix.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Clazex/HollowKnight.DoubleJumpFix/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Vanilla Map Mod</Name>
+        <Description>Adds all items/locations to the existing map.</Description>
+        <Version>1.0.4.0</Version>
+        <Link SHA256="bd2d9676f3f9fb206b65a966062c2e2b7b4a8df88274bf627042ccbaa3f4446b">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/VanillaMapMod.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/syyePhenomenol/HollowKnight.VanillaMapMod/]]>
+        </Repository>
+        <Integrations>
+            <Integration>AdditionalMaps</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>GeoHunger</Name>
+        <Description>You gradually lose geo and gradually lose health at 0 geo.</Description>
+        <Version>1.3.0.0</Version>
+        <Link SHA256="24730884D0367A77CDB817CB6ED76766907520B47A4546C8780BDA04224A101D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GeoHunger.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/syyePhenomenol/HollowKnight.GeoHunger/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Pantheons Hit Counter</Name>
+        <Description>Counts hits in pantheons automatically.</Description>
+        <Version>1.3.5.0</Version>
+        <Link SHA256="AC3ACEDF57BBD282E7BB2B762F4019C0B71E80843FDD45AA13006D2FF2B50E0F">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PantheonsHitCounter.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Dastan21/HollowKnight.PantheonsHitCounter/]]>
+        </Repository>
+        <Tags>
+            <Tag>Cosmetic</Tag>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Hit Counter</Name>
+        <Description>Allow creating custom counters for counting hits.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="3C341027545572EFE9F5CCF447DD46F2C296117A44B4E4D9F09FBB4A9CE1BCC6">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HitCounter.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Dastan21/HollowKnight.HitCounter/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>DoubleRadiance</Name>
+        <Description>You can battle with two radiance at same time ,their hp is shared.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="1E67B23F6F20EAB1383B934BD5DFD14BC263702947FAB1F41CAFCA61EFEA592A">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DoubleRadiance.1578.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.DoubleRadiance/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CustomImage</Name>
+        <Description>You can change some sprites.</Description>
+        <Version>1.6.6.0</Version>
+        <Link SHA256="dd4baba4d5be74f0b5cf60d5a599a680e6bdc55c6a362f85d827f4449d87b71a">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomImage.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.CustomImage/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Custom Knight</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+            <Tag>Cosmetic</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ThecurseofSly</Name>
+        <Description>When you get geo,you will get damage or die.</Description>
+        <Version>2.2.0.0</Version>
+        <Link SHA256="53689f462a061376e842fc8e547a716e0006d094954d2c25b5a0469392ea6002">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/TheCurseofSly.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.ThecurseofSly/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>FuryMod</Name>
+        <Description>A mod if you equipped Fury of Fallen,you will be 1 health and can use it</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="cabe30738573e10bb0f28d2abe709de2484eafcba265d6fc56b08b3b364b990b">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FuryMod.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.FuryMod/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ReverseKnight</Name>
+        <Description>The knight... look a little strange...</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="ba9d0d7767cdeb39ce1c8b856bcf8232a22b02446c4e0fdacbac0b2b15638df2">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ReverseKnight.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.ReverseKnight/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Fragile Purse</Name>
+        <Description>Makes you drop geo whenever you get hit, and has a setting to kill you if you get hit without any geo</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="A032FB1CC49C8A23B0FB4078B5BEDEFE2E8B8B4D6356D60E3B3EEC64C7478BC7">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FragilePurse.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Mimijackz/FragilePurse/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>DeathCounter</Name>
+        <Description>A cool DeathCounter</Description>
+        <Version>1.9.0.0</Version>
+        <Link SHA256="e5c28cb1a85a40d3ef865a0269245cef018297f36820047bf6f013276984bbfd">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DeathCounter.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/DeathCounter/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>DecorationMaster</Name>
+        <Description>A mod for making area harder by adding spike and saw</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="6090db10c6b36a8a1661834299bef620f47ef48612bdb1c1b3449f0edddcff8a">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Decoration.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.Decoration/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HKTracker</Name>
+        <Description>Tracks player data. Most frequently used to display abilities/charms during streams</Description>
+        <Version>3.4.1.1</Version>
+        <Link SHA256="FF8E10FE7307D15C5F7F8475F3FB910244D6160658F1E337FCCD45A4EB080A29">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKTracker.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/kingkiller39/HollowKnightRandomizerTracker2.8/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>FragileStrengthForNailArts</Name>
+        <Description>Allows Fragile / Unbreakable Strength to increase Nail Art damage. Originally by TTacco</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="CFA806E624D357CE680E4FF84766816ADBB9818F7CF08940D9622E446AB04C1F">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/FragileStrengthForNailArts.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Araraura/FragileStrengthForNailArts/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ParryKnight</Name>
+        <Description>Enemies who can be parried only take damage from parries. Only spells can damage other enemies.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="bd5cfe85c18c4546c767a0fe152b80e2adbde4570e9d61564636fca55b467996">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ParryKnight.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/AngelSassin/ParryKnight1.5/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>BingoBoard</Name>
+        <Description>In-game bingo board display.</Description>
+        <Version>1.0.0.1</Version>
+        <Link SHA256="D2F885ECB1B55DD2768FF9269C8C996BB53B8553C0AAAD0384A23656FCE7BCF3">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/BingoBoard.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+            <Dependency>ItemChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/JasonILTG/HollowKnight.BingoBoard/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>HKTool</Name>
+        <Description>A library mod</Description>
+        <Version>1.10.2.0</Version>
+        <Link SHA256="510e491e10255ed7c31445e7d26713c938f19bcfe172f1d5039bcb074367c811">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Output.zip]]>
+        </Link>
+
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/HKLab/HollowKnightMod.Tool/]]>
+        </Repository>
+        <Tags>
+            <Tag>Library</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ShieldParry</Name>
+        <Description>Allows player to use shield in the game</Description>
+        <Version>0.0.0.2</Version>
+        <Link SHA256="5e69f89e73d9db65505f123676c2ee4cb070d8d914d23a8fa5c9218dacd104c1">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DCParry.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/HKLab/DCParry/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>ChangeHud</Name>
+        <Description>A mod let you can use different kinds of huds in same mode.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="7d5043bc77d97432892f4d4afcae4e800c41d81b7749a7704f9d8ede679674ad">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ChangeHud.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.ChangeHud/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>QuirrelFlower</Name>
+        <Description>A little gift for qurriel</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="2f54586510e73f8bce07a23c4d6233fd885c856b8d49fb70bc6f1ef9f6bbfc26">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/QuirrelFlower-v1.2.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.QuirrelFlower/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Custom Knight</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>UnityExplorerPlus</Name>
+        <Description>A mod that adds functionality to UnityExplorer</Description>
+        <Version>0.8.3.0</Version>
+        <Link SHA256="728830a348031970bc2e5914d43b763205562b26adf34c30273d715213ad2ad1">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Output.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+            <Dependency>Unity Explorer</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/UnityExplorerPlus/]]>
+        </Repository>
+        <Integrations>
+            <Integration>Satchel</Integration>
+            <Integration>Game Object Dump</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Dead Cells Barrel Launcher</Name>
+        <Description>Change the knight's weapon to Barrel Launcher</Description>
+        <Version>0.0.0.0</Version>
+        <Link SHA256="e0c38393f9a52d7ce4e7089df56f21e631874a2c9f10bdaa23467a5d05395125">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/DCBarrelLauncher.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/DCBarrelLauncher/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HKTimer</Name>
+        <Description>An in game timer mod for 1.5</Description>
+        <Version>0.1.1.0</Version>
+        <Link SHA256="AD8359F0531D95E13C03BE9C56B6117D30964972BC2281A429F968861A5B6F03">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKTimer.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Yurihaia/HollowKnight-Timer/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>SeedSummon</Name>
+        <Description>A mod you can summon lifeseed!</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="a7da4680976c04bbeb1cbb61a2ab42323e23b098825a1c1c6f58174715795ebf">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/SeedSummon.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.seedSummon/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Negative Nail</Name>
+        <Description>Makes your nail do negative damage forcing you to rely on spells. Recommended you play with Enemy HP Bar mod.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="feb97537bf83f2afd691add41e27757df7848730d8a46e03ba46519ef25dd587">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/NegativeNail.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Nexade/NegativeNail/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Abskoth</Name>
+        <Description>A gameplay mod that adds invincible Markoths to the Absolute Radiance fight.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="2b04132c3b1557978032adaa0fe4b94788ac3053a98b683da108deb51346e903">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Abskoth.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/AngelSassin/Abskoth/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>DumbEnemy</Name>
+        <Description>Make Enemy and their attack invisible</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="f60e167cf306eb9f57a241b630f176aabbe3bc979f4e242eb8049716970b7b24">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Dumb.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.DumbEnemy/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CountDownForLife</Name>
+        <Description>When CountDown went to zero,you will be punished</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="ffac0fa12dc750864f20bcf18c75e6f705632aee2295f7ce7e678bd3319e1794">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CountdownforLife.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+            <Dependency>MagicUI</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.CountDownForLife/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Dead Cells The Queen</Name>
+        <Description>Replaced Grimm in Godhome with The Queen in Dead Cells</Description>
+        <Version>0.0.0.0</Version>
+        <Link SHA256="a7dbc69ccf10d83d239d3e8db5bb78acaf765dd046d8f6d44ff6f470410257f6">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Queen.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/DCQueen/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Dead Cells Time Keeper</Name>
+        <Description>Add TimeKeeper statue</Description>
+        <Version>0.0.0.0</Version>
+        <Link SHA256="e67e8dfc5b71db5f016aad9a65eebfa15ae6992d4b4e54bcee46a0120c65987c">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Output.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/DCTimeKeeper/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>ShadeControl</Name>
+        <Description>A DebugAddition make you can control shade spell</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="4415be9ee2abd2a82a566231f11beea8d1e9bf165d3a041ae27c803e33183030">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ShadeControl.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>DebugMod</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.ShadeControl/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CustomAudio</Name>
+        <Description>A Hollow Knight mod can replace some kind of audio</Description>
+        <Version>1.1.0.0</Version>
+        <Link SHA256="f3ad417161f0d82a65c533d28ed7579f3e21d7fad4dd2fe5f1c7a6857f856736">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomAudio.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HKCustomAudio/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Zote Killer</Name>
+        <Description>Allows you to kill the Zote in the Colosseum</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="c0e1d68d361f54f551277a77014f013f808150455fad25f4809615211ed7bf4d">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/ZoteKiller.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/ZoteKiller/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Cyclone Throws</Name>
+        <Description>Allows you to throw the Cyclone as a ranged weapon </Description>
+        <Version>0.0.0.0</Version>
+        <Link SHA256="b7d9cd795f0957873b433a96df0f4e1e8f59a13ca94b7c63a263ff364d12605c">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CycloneOut.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/CycloneOut/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Mirrored Hallownest</Name>
+        <Description>Mirrors the entire Hollow Knight map</Description>
+        <Version>0.3.0.0</Version>
+        <Link SHA256="43730E8C83D76DEFB584300FA67E3E7A55F347B492F96AFB51BC62E2B1C7764B">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Mirrored_Hallownest.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Mimijackz-HKModding/MirroredHallownest]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Archipelago</Name>
+        <Description>Enables play with the Archipelago multiworld system.</Description>
+        <Version>0.1.0.1</Version>
+        <Link SHA256="7B6380037B6AAF22E66ADF2A3B930862CADDEBFC75B70DB445983F62D23B5C2F">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Archipelago.HollowKnight.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>Benchwarp</Dependency>
+            <Dependency>QoL</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Ijwu/Archipelago.HollowKnight/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Archipelago Map Mod</Name>
+        <Description>An conversion of the Randomizer Map Mod S that works with Archipelago Randomizer</Description>
+        <Version>0.3.0.0</Version>
+        <Link SHA256="1BBEA1912C7FACD7CB2E879B98F33E2E1F75522189C81599F0BB457BF3900D14">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/APMapMod.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Archipelago</Dependency>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>Vasi</Dependency>
+            <Dependency>Satchel</Dependency>
+            <Dependency>MenuChanger</Dependency>
+            <Dependency>MagicUI</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/KonoTyran/HollowKnight.ArchipelagoMapMod/]]>
+        </Repository>
+        <Integrations>
+            <Integration>AdditionalMaps</Integration>
+            <Integration>Benchwarp</Integration>
+        </Integrations>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>GreatChampion</Name>
+        <Description>A Modboss for failed champion</Description>
+        <Version>2.1.0.0</Version>
+        <Link SHA256="6cb8db8ac60a5c13ca7d8f9fc628470b142f8e9cc43a279003852f509ecc89aa">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GreatChampion.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.GreatChampion/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Cyclone Real Combat</Name>
+        <Description>Removed the learn Cyclone cutscene in and replaced it with real combat</Description>
+        <Version>0.0.0.0</Version>
+        <Link SHA256="a3a6b2c0294a28de26bda4caba4cf14bc80fcea31dce4a25259e158774efa50b">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/NailMaster.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/NailMaster/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>OrbTracker</Name>
+        <Description>Points an arrow to the closest Whispering Root orb, and counts how many you have gotten.</Description>
+        <Version>1.1.4.0</Version>
+        <Link SHA256="DB52FBC4CF83EAA5249F114EEB6FE9908B8A43B3B84C049A4034748C4EA50F5E">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/OrbTracker.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/syyePhenomenol/HollowKnight.OrbTracker/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>CustomPantheon</Name>
+        <Description>A mod add an extra boss door in God Home,BossSequence decided by yourself .</Description>
+        <Version>1.2.0.1</Version>
+        <Link SHA256="4bca627ede67b031d0cb5aa9d42316ccb859a0bbc04ab22b1dea64bba5f3df2b">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CustomPantheon.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/HollowKnight.CustomPantheon/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HKMP.ModDiff</Name>
+        <Description>HKMP Addon for checking mod lists between Clients and Servers.</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="4c5f3cdecc7ceb7cce708b0d26762e97e24562c3dea8eca6ae7a2508fc9021f0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Hkmp.ModDiff.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKMP</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/BlindGarret/HKMP.ModDiff/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>RandomCharm</Name>
+        <Description>A HollowKnight mod change charm you equipped each scene in random(include Transcendence new charms)</Description>
+        <Version>1.5.0.0</Version>
+        <Link SHA256="706c6779f6e22ad5232c7a92954f110dc6e1e55913501bf098fddaef74f06dfb">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandomCharm.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/RandomCharm/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Uumuu Plus</Name>
+        <Description>Uumuu has been slightly enhanced</Description>
+        <Version>1.0.1.0</Version>
+        <Link SHA256="093b7df7d90a03c714e906bc473247e988463cfda21de30198489b2d7fcb64d1">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/UumuuPlus.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKTool</Dependency>
+        </Dependencies>
+
+        <Repository>
+            <![CDATA[https://github.com/HKLab/UumuuPlus/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>press g to dab</Name>
+        <Description>press g and the knight will dab</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="f99eac66f7b971ba054da397d9b2ccc0166203fdb7b6576e19070941a120f5de">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PressGToDab.zip]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Link459/PressGToDab/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Input Buffers</Name>
+        <Description>Allows for buffering inputs for every knight action.</Description>
+        <Version>1.0.4.0</Version>
+        <Link SHA256="6017EA4A58874361784DD9E597936DEE7A41079375C80F334E42A6B990B8F8DA">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/InputBuffers.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/syyePhenomenol/HollowKnight.InputBuffers/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>PathOfPureVessel</Name>
+        <Description>Battle with PV at the end of POP</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="cea7e40543cb5dc9fdb42bddb6f908d6ddafc751192b4a1facf79b476c63fdc7">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PathOfPureVessel.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/PathOfPureVessel/]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Fennel</Name>
+        <Description>Ports the Fennel fight from Momodora Reverie Under the Moonlight into Hollow Knight</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="b03f6fe11aa17ea33cd36c3f121bc71492f6443cf5bba424743380593b15e6a0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/Fennel.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/Fennel/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Propeller Knight</Name>
+        <Description>Adds Propeller Knight from Shovel Knight to Hollow Knight.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="30d9e1b3340a019395ba79e457192451e28c00a17b1e78fd4447ed0bf8cd5788">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/PropellerKnight.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Satchel</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/Propeller-Knight/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Cagney Carnation</Name>
+        <Description>Hollow Knight mod that adds Cagney Carnation boss from Cuphead.</Description>
+        <Version>1.0.3.0</Version>
+        <Link SHA256="a4a668056d606daf30773d299fd5ec0dfb5441ae9db02f5a2a91ac61b908cd52">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/CagneyCarnation.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ygsbzr/CagneyCarnation/]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Rando Vanilla Tracker</Name>
+        <Description>Randomizer 4 add-on for tracking non-randomized items.</Description>
+        <Version>1.2.0.0</Version>
+        <Link SHA256="4F378EFB2227110AAE8373EED968076B0830F28C72AB2FA065ECAABEF64B7DD3">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/RandoVanillaTracker.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Randomizer 4</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/syyePhenomenol/HollowKnight.RandoVanillaTracker/]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>HKMP Tag</Name>
+        <Description>An HKMP addon that adds the tag game-mode.</Description>
+        <Version>2.1.2.0</Version>
+        <Link SHA256="39D3FA1B08DB714B066F7A5723582D23BB20BF72B5C9867D6EF4CA9BC5BEDA2D">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/HKMPTag.dll]]>
+        </Link>
+        <Dependencies>
+            <Dependency>HKMP</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Extremelyd1/HKMP-Tag/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>The Glimmering Realm</Name>
+        <Description>Adds a game mode that changes the layout, items and lore of Hallownest into a whole new world to explore - the Glimmering Realm! Now including the Dream of the Fallen Expansion</Description>
+        <Version>1.1.3.0</Version>
+        <Link SHA256="C383C495EA88268D6A67790C333EAE2687F10330BBC7794D18A6B491BD92E5F3"><![CDATA[https://hk-modlinks.clazex.net/mods/TheGlimmeringRealm.zip]]></Link>
+
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>MenuChanger</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/ToboterXP/HollowKnight.TheGlimmeringRealm]]>
+        </Repository>
+        <Tags>
+            <Tag>Expansion</Tag>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Convenient Path of Pain</Name>
+        <Description>This mod makes it so whenever you strike a Path of Pain Soul Totem or a Wingsmould with your nail it will fully refill your Soul Vessel. Currently this does not work with Nail Arts. Thank you to SFGrenade for making this compatible with non vanilla Totems and Wingsmoulds</Description>
+        <Version>1.0.0.0</Version>
+            <Link SHA256="0b45dc07936f276f42310aaa7fbc9fcae6603086b35e3b0aae6198f95eb7ba48">
+                <![CDATA[https://hk-modlinks.clazex.net/mods/Convenient.PoP.dll]]></Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/EnderOnryo/Convenient_PoP]]>
+        </Repository>
+        <Tags>
+            <Tag>Utility</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Godhome Win Loss Tracker</Name>
+        <Description>Tracks win/loss and hit stats in Hall of Gods and Pantheons.</Description>
+        <Version>0.5.0.0</Version>
+        <Link SHA256="95329410F9861732086DE40EE5930430C6AC70589A07CB2E6C3FD53FF7D87821">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/GodhomeWinLossTracker.zip]]>
+        </Link>
+        <Dependencies>
+            <Dependency>Osmi</Dependency>
+            <Dependency>Satchel</Dependency>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/royitaqi/HollowKnight.GodhomeWinLossTracker/]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Empty Menu</Name>
+        <Description>Adds an empty menu screen.</Description>
+        <Version>1.0.0.0</Version>
+        <Link SHA256="ec6d3bb0af2d1b9f313474ec396336e8d3f0933fdd28e0196c4447b6721d6ee0">
+            <![CDATA[https://hk-modlinks.clazex.net/mods/MenuTestMod.dll]]>
+        </Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Cavernosa/HollowKnight.EmptyMenu]]>
+        </Repository>
+    </Manifest>
+    <Manifest>
+        <Name>Brothers of Battle</Name>
+        <Description>fight the brothers who where trained by the great nailsage sly</Description>
+        <Version>1.0.0.0</Version>
+            <Link SHA256="5041fd5afb347c7ae7aec5cf5c7852b8a2b9e072a0f7cd38ff4dc1ce6f86f134"><![CDATA[https://hk-modlinks.clazex.net/mods/BrothersOfBattle.zip]]></Link>
+        <Dependencies>
+            <Dependency>Vasi</Dependency>
+        </Dependencies>
+          <Repository>
+            <![CDATA[https://github.com/Link459/BrothersOfBattle]]>
+        </Repository>
+        <Tags>
+            <Tag>Boss</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Lore Master</Name>
+        <Description>Adds abilities to lore tablets and certain npc</Description>
+        <Version>1.1.2.0</Version>
+            <Link SHA256="3442ada245b4c035300632c0f57441c4ce16c0c76f6d0615e30f06ec05755023">
+                <![CDATA[https://hk-modlinks.clazex.net/mods/LoreMaster.zip]]></Link>
+        <Dependencies>
+            <Dependency>ItemChanger</Dependency>
+            <Dependency>SFCore</Dependency>
+        </Dependencies>
+        <Repository>
+            <![CDATA[https://github.com/Korzer420/LoreMaster]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+    <Manifest>
+        <Name>Infection Bomb</Name>
+        <Description>Spawns radiance whenever you kill an infected(or any) bug</Description>
+        <Version>0.1.0.0</Version>
+        <Link SHA256="F5F660A881DA4C2943F9B159C70B92D930FDCBE79AB76772F7570647B1D55A1A"><![CDATA[https://hk-modlinks.clazex.net/mods/Infectionbomb.zip]]></Link>
+        <Dependencies />
+        <Repository>
+            <![CDATA[https://github.com/Mimijackz/HKModding.Infectionbomb]]>
+        </Repository>
+        <Tags>
+            <Tag>Gameplay</Tag>
+        </Tags>
+    </Manifest>
+</ModLinks>
