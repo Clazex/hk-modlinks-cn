@@ -5,12 +5,11 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Xml;
 
-const string urlBase = "https://hk-modlinks.clazex.net/";
-List<string> skipList = new() {
-	"clazex.net",
-	"vercel.app",
-	"jsdelivr.net"
-};
+string urlBase = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_BASE_URL")
+	?? "https://hk-modlinks.clazex.net/";
+
+List<string> skipList = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_SKIP_URLS")?.Split('|').ToList()
+	?? new();
 
 HttpClient client = new();
 
