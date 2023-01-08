@@ -81,6 +81,11 @@ IEnumerable<Task> apiDownloadTasks = apiLinkNodes
 
 tasks = tasks.Concat(apiDownloadTasks).ToList();
 
+#if DEBUG
+await Task.WhenAll(tasks);
+tasks.Clear();
+#endif
+
 #pragma warning restore CS8600, CS8601, S8602
 
 #endregion
@@ -173,6 +178,13 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 				Console.WriteLine($"Downloaded {name} as {fullModName}");
 			}
 		});
+
+#if DEBUG
+	if (tasks.Count > 2) {
+		await Task.WhenAll(tasks);
+		tasks.Clear();
+	}
+#endif
 
 	tasks.Add(downloadModtask);
 }
