@@ -185,4 +185,6 @@ Directory.Delete("temp", true);
 apiLinksXml.Save("dist/ApiLinks.xml");
 modLinksXml.Save("dist/ModLinks.xml");
 
-File.WriteAllText("dist/UPDATE_TIME", DateTime.UtcNow.ToString("s") + "Z\n");
+using SHA1 sha1 = SHA1.Create();
+byte[] hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(apiLinksXml.ToString() + modLinksXml.ToString()));
+File.WriteAllText("dist/UPDATE_SHA", Convert.ToHexString(hash));
