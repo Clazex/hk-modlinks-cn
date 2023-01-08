@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  fetch-and-deploy:
+  deploy-vercel:
     runs-on: ubuntu-latest
 
     env:
@@ -33,5 +33,33 @@ jobs:
           clean: true
           single-commit: true
           branch: dist
+          folder: dist
+          commit-message: "chore: deploy"
+
+  deploy-ghproxy:
+    runs-on: ubuntu-latest
+
+    env:
+      DOTNET_NOLOGO: true
+      HK_MODLINKS_MIRROR_BASE_URL: "https://ghproxy.net/https://raw.githubusercontent.com/Clazex/hk-modlinks-cn/ghproxy/"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.x.x
+
+      - name: Fetch
+        run: dotnet run -c Release --project HKModLinksCN
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          clean: true
+          single-commit: true
+          branch: ghproxy
           folder: dist
           commit-message: "chore: deploy"
