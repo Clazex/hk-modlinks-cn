@@ -12,6 +12,8 @@ List<string> skipList = new() {
 	"jsdelivr.net"
 };
 
+HttpClient client = new();
+
 List<Task> tasks = new();
 try {
 	Directory.Delete("dist", true);
@@ -29,13 +31,11 @@ Directory.CreateDirectory("temp");
 XmlDocument apiLinksXml = new() {
 	PreserveWhitespace = true
 };
-using (HttpClient client = new()) {
-	apiLinksXml.Load(
-		client
-			.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ApiLinks.xml")
-			.Result
-	);
-}
+apiLinksXml.Load(
+	client
+		.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ApiLinks.xml")
+		.Result
+);
 
 #endregion
 
@@ -44,13 +44,11 @@ using (HttpClient client = new()) {
 XmlDocument modLinksXml = new() {
 	PreserveWhitespace = true
 };
-using (HttpClient client = new()) {
-	modLinksXml.Load(
-		client
-			.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ModLinks.xml")
-			.Result
-	);
-}
+modLinksXml.Load(
+	client
+		.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ModLinks.xml")
+		.Result
+);
 
 #endregion
 
@@ -66,7 +64,7 @@ XmlNode windowsNode = apiLinksNode["Windows"].ChildNodes[1];
 XmlNode[] apiLinkNodes = { linuxNode, macNode, windowsNode };
 
 IEnumerable<Task> apiDownloadTasks = apiLinkNodes
-	.Select(node => new HttpClient()
+	.Select(node => client
 		.GetStreamAsync(node.InnerText)
 		.ContinueWith(task => {
 			node.InnerText = urlBase + $"apis/{node.ParentNode.Name}.zip";
@@ -114,7 +112,7 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 
 #pragma warning restore CS8600, CS8602
 
-	Task downloadModtask = new HttpClient()
+	Task downloadModtask = client
 		.GetStreamAsync(link)
 		.ContinueWith(task => {
 			string modName = Regex.Replace(name.Normalize(NormalizationForm.FormD), @"[^ -&(-_a-~]", "");
