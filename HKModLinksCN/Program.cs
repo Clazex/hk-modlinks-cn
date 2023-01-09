@@ -197,6 +197,14 @@ Directory.Delete("temp", true);
 apiLinksXml.Save("dist/ApiLinks.xml");
 modLinksXml.Save("dist/ModLinks.xml");
 
-using SHA1 sha1 = SHA1.Create();
-byte[] hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(apiLinksXml.ToString() + modLinksXml.ToString()));
-File.WriteAllText("dist/UPDATE_SHA", Convert.ToHexString(hash));
+ZipFile.CreateFromDirectory("dist", "dist.zip", CompressionLevel.NoCompression, false);
+
+using (SHA1 sha1 = SHA1.Create())
+using (FileStream distZip = File.OpenRead("dist.zip")) {
+	byte[] hash = sha1.ComputeHash(distZip);
+	File.WriteAllText("dist/UPDATE_SHA.txt", Convert.ToHexString(hash) + '\n');
+}
+
+#if !DEBUG
+File.Delete("dist.zip");
+#endif
