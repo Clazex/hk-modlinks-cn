@@ -1,4 +1,5 @@
 using System.IO.Compression;
+using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -12,13 +13,18 @@ List<string> skipList = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_S
 	?? new();
 
 HttpClient client = new();
-
 List<Task> tasks = new();
+
 try {
 	Directory.Delete("dist", true);
 } catch { }
+
 try {
 	Directory.Delete("temp", true);
+} catch { }
+
+try {
+	File.Delete("dist.zip");
 } catch { }
 
 Directory.CreateDirectory("dist/apis");
@@ -53,50 +59,41 @@ modLinksXml.Load(
 
 #region Download Apis
 
-#pragma warning disable CS8600, CS8601, CS8602
+XmlNode apiLinksNode = apiLinksXml.GetElementsByTagName("Links")[0]!;
 
-XmlNode apiLinksNode = apiLinksXml.GetElementsByTagName("Links")[0];
-XmlNode linuxNode = apiLinksNode["Linux"].ChildNodes[1];
-XmlNode macNode = apiLinksNode["Mac"].ChildNodes[1];
-XmlNode windowsNode = apiLinksNode["Windows"].ChildNodes[1];
-
-XmlNode[] apiLinkNodes = { linuxNode, macNode, windowsNode };
-
-IEnumerable<Task> apiDownloadTasks = apiLinkNodes
+IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
+		apiLinksNode["Linux"]!.ChildNodes[1]!,
+		apiLinksNode["Mac"]!.ChildNodes[1]!,
+		apiLinksNode["Windows"]!.ChildNodes[1]!
+	}
 	.Select(node => client
-		.GetStreamAsync(node.InnerText)
+		.GetAsync(node.InnerText)
 		.ContinueWith(task => {
-			node.InnerText = urlBase + $"apis/{node.ParentNode.Name}.zip";
+			node.InnerText = $"{urlBase}apis/{node.ParentNode!.Name}.zip";
 
-			Stream res = task.Result;
 			Stream fileStream = File.Create($"dist/apis/{node.ParentNode.Name}.zip");
-			res.CopyTo(fileStream);
+			task.Result.EnsureSuccessStatusCode().Content.ReadAsStream().CopyTo(fileStream);
 
 			Console.WriteLine($"Downloaded {node.ParentNode.Name} api");
 		})
 	);
 
-tasks = tasks.Concat(apiDownloadTasks).ToList();
+tasks.AddRange(apiDownloadTasks);
 
 #if DEBUG
 await Task.WhenAll(tasks);
 tasks.Clear();
 #endif
 
-#pragma warning restore CS8600, CS8601, S8602
-
 #endregion
 
 #region Download mods
 
 foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
+	string name = modInfo["Name"]!.InnerText;
 
-#pragma warning disable CS8600, CS8602
-
-	string name = modInfo["Name"].InnerText;
-
-	XmlNode linkNode = null;
-	foreach (XmlNode node in modInfo["Link"].ChildNodes) {
+	XmlNode linkNode = null!;
+	foreach (XmlNode node in modInfo["Link"]!.ChildNodes) {
 		if (node.Name == "#cdata-section") {
 			linkNode = node;
 			break;
@@ -109,41 +106,44 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 		continue;
 	}
 
-#pragma warning restore CS8600, CS8602
+	string modName = Regex.Replace(name.Normalize(NormalizationForm.FormD), @"[^ -&(-~]", "");
+	modName = Regex.Matches(modName, @"(?:[A-Z]?[a-z]+)|[A-Z]|\d+")
+		.Select(match => match.Value)
+		.Aggregate(new StringBuilder(modName.Length), (sb, part) => {
+			_ = sb.Append(char.ToUpperInvariant(part[0]));
 
-	Task downloadModtask = client
-		.GetStreamAsync(link)
-		.ContinueWith(task => {
-			string modName = Regex.Replace(name.Normalize(NormalizationForm.FormD), @"[^ -&(-_a-~]", "");
-			StringBuilder modNameBuilder = new(modName.Length);
-			Regex.Matches(modName, @"(?:[A-Z]?[a-z]+)|[A-Z]|\d+")
-				.Select(match => match.Value)
-				.ToList()
-				.ForEach(part => {
-					_ = modNameBuilder.Append(char.ToUpperInvariant(part[0]));
-
-					if (part.Length > 1) {
-						_ = modNameBuilder.Append(part[1..]);
-					}
-				});
-
-			modName = modNameBuilder.ToString();
-
-			if (!char.IsUpper(modName[0])) {
-				modName = modName.Length switch {
-					1 => char.ToUpperInvariant(modName[0]) + modName[1..],
-					_ => modName.ToUpperInvariant()
-				};
+			if (part.Length > 1) {
+				_ = sb.Append(part[1..]);
 			}
 
-			string version = modInfo["Version"]!.InnerText;
-			string fullModName = $"{modName}-v{version}";
-			string fileName = fullModName + ".zip";
+			return sb;
+		})
+		.ToString();
 
-			linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(fileName)}";
+	modName = modName.Length switch {
+		1 => modName.ToUpperInvariant(),
+		_ => char.ToUpperInvariant(modName[0]) + modName[1..]
+	};
 
-			Stream resStream = task.Result;
-			using MemoryStream ms = new();
+	string version = modInfo["Version"]!.InnerText;
+	string fullModName = $"{modName}-v{version}";
+	string fileName = fullModName + ".zip";
+
+	linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(fileName)}";
+
+	Task downloadModtask = client
+		.GetAsync(link)
+		.ContinueWith(task => {
+			HttpContent content = task.Result.EnsureSuccessStatusCode().Content;
+			HttpContentHeaders contentHeaders = content.Headers;
+
+			int approxSize = checked((int) (contentHeaders.ContentDisposition switch {
+				ContentDispositionHeaderValue val when val.Size.HasValue => val.Size.Value,
+				_ => contentHeaders.ContentLength.GetValueOrDefault(0)
+			}));
+
+			Stream resStream = content.ReadAsStream();
+			using MemoryStream ms = new(approxSize);
 			resStream.CopyTo(ms);
 			resStream.Dispose();
 
@@ -190,7 +190,10 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 
 await Task.WhenAll(tasks);
 
+#if !DEBUG
 Directory.Delete("temp", true);
+#endif
+
 apiLinksXml.Save("dist/ApiLinks.xml");
 modLinksXml.Save("dist/ModLinks.xml");
 
