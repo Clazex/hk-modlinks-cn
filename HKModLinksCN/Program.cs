@@ -31,6 +31,13 @@ Directory.CreateDirectory("dist/apis");
 Directory.CreateDirectory("dist/mods");
 Directory.CreateDirectory("temp");
 
+static int GetApproxSize(HttpContent self) {
+	return checked((int) (self.Headers.ContentDisposition switch {
+		ContentDispositionHeaderValue val when val.Size.HasValue => val.Size.Value,
+		_ => self.Headers.ContentLength.GetValueOrDefault(0)
+	}));
+}
+
 #region Download and parse ApiLinks.xml
 
 XmlDocument apiLinksXml = new() {
@@ -70,9 +77,11 @@ IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
 		.GetAsync(node.InnerText)
 		.ContinueWith(task => {
 			node.InnerText = $"{urlBase}apis/{node.ParentNode!.Name}.zip";
+			HttpContent content = task.Result.EnsureSuccessStatusCode().Content;
 
-			Stream fileStream = File.Create($"dist/apis/{node.ParentNode.Name}.zip");
-			task.Result.EnsureSuccessStatusCode().Content.ReadAsStream().CopyTo(fileStream);
+			using FileStream fileStream = File.Create($"dist/apis/{node.ParentNode.Name}.zip", GetApproxSize(content));
+			using Stream resStream = content.ReadAsStream();
+			resStream.CopyTo(fileStream);
 
 			Console.WriteLine($"Downloaded {node.ParentNode.Name} api");
 		})
@@ -135,27 +144,21 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 		.GetAsync(link)
 		.ContinueWith(task => {
 			HttpContent content = task.Result.EnsureSuccessStatusCode().Content;
-			HttpContentHeaders contentHeaders = content.Headers;
 
-			int approxSize = checked((int) (contentHeaders.ContentDisposition switch {
-				ContentDispositionHeaderValue val when val.Size.HasValue => val.Size.Value,
-				_ => contentHeaders.ContentLength.GetValueOrDefault(0)
-			}));
-
-			Stream resStream = content.ReadAsStream();
-			using MemoryStream ms = new(approxSize);
-			resStream.CopyTo(ms);
-			resStream.Dispose();
+			using MemoryStream ms = new(GetApproxSize(content));
+			using (Stream resStream = content.ReadAsStream()) {
+				resStream.CopyTo(ms);
+			}
 
 			try {
 				_ = new ZipArchive(ms, ZipArchiveMode.Read, true);
 
 				ms.Position = 0;
-				using Stream modFile = File.Create($"dist/mods/{fileName}");
+				using FileStream modFile = File.Create($"dist/mods/{fileName}", checked((int) ms.Length));
 				ms.CopyTo(modFile);
 			} catch (InvalidDataException) {
 				_ = Directory.CreateDirectory($"temp/{modName}");
-				using (Stream tempFile = File.Create($"temp/{modName}/{modName}.dll")) {
+				using (FileStream tempFile = File.Create($"temp/{modName}/{modName}.dll", checked((int) ms.Length))) {
 					ms.CopyTo(tempFile);
 				}
 
