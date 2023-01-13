@@ -12,6 +12,11 @@ string urlBase = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_BASE_URL
 List<string> skipList = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_SKIP_URLS")?.Split('|').ToList()
 	?? new();
 
+long maxAllowedSize;
+if (!long.TryParse(Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_MAX_ALLOWED_SIZE"), out maxAllowedSize)) {
+	maxAllowedSize = 512 * 1024 * 1024;
+}
+
 HttpClient client = new();
 List<Task> tasks = new();
 
@@ -139,8 +144,6 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 	string fullModName = $"{modName}-v{version}";
 	string fileName = fullModName + ".zip";
 
-	linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(fileName)}";
-
 	Task downloadModtask = client
 		.GetAsync(link)
 		.ContinueWith(task => {
@@ -173,10 +176,16 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 				Console.WriteLine($"Compressed {name}");
 			}
 
-			if (name == modName) {
-				Console.WriteLine($"Downloaded {fullModName}");
+			if (new FileInfo($"dist/mods/{fileName}").Length > maxAllowedSize) {
+				Console.WriteLine($"Skipped {fullModName}");
 			} else {
-				Console.WriteLine($"Downloaded {name} as {fullModName}");
+				linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(fileName)}";
+
+				if (name == modName) {
+					Console.WriteLine($"Downloaded {fullModName}");
+				} else {
+					Console.WriteLine($"Downloaded {name} as {fullModName}");
+				}
 			}
 		});
 
