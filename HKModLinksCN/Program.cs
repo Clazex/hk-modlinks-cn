@@ -66,6 +66,7 @@ modLinksXml.Load(
 
 #region Download Apis
 
+string apiVersion = apiLinksXml.GetElementsByTagName("Version")[0]!.InnerText;
 XmlNode apiLinksNode = apiLinksXml.GetElementsByTagName("Links")[0]!;
 
 IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
@@ -79,7 +80,7 @@ IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
 			node.InnerText = $"{urlBase}apis/{node.ParentNode!.Name}.zip";
 			HttpContent content = task.Result.EnsureSuccessStatusCode().Content;
 
-			using FileStream fileStream = File.Create($"dist/apis/{node.ParentNode.Name}.zip", GetApproxSize(content));
+			using FileStream fileStream = File.Create($"dist/apis/{node.ParentNode.Name}-{apiVersion}.zip", GetApproxSize(content));
 			using Stream resStream = content.ReadAsStream();
 			resStream.CopyTo(fileStream);
 
