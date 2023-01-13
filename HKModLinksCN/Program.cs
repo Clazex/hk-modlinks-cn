@@ -28,13 +28,13 @@ try {
 	Directory.Delete("temp", true);
 } catch { }
 
-try {
-	File.Delete("dist.zip");
-} catch { }
+Directory.CreateDirectory("dist");
 
 Directory.CreateDirectory("dist/apis");
 Directory.CreateDirectory("dist/mods");
 Directory.CreateDirectory("temp");
+
+List<string> downloadedFiles = new();
 
 static int GetApproxSize(HttpContent self) {
 	return checked((int) (self.Headers.ContentDisposition switch {
@@ -85,7 +85,10 @@ IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
 			node.InnerText = $"{urlBase}apis/{node.ParentNode!.Name}.zip";
 			HttpContent content = task.Result.EnsureSuccessStatusCode().Content;
 
-			using FileStream fileStream = File.Create($"dist/apis/{node.ParentNode.Name}-{apiVersion}.zip", GetApproxSize(content));
+			string filePath = $"dist/apis/{node.ParentNode.Name}-{apiVersion}.zip";
+			downloadedFiles.Add(filePath);
+
+			using FileStream fileStream = File.Create(filePath, GetApproxSize(content));
 			using Stream resStream = content.ReadAsStream();
 			resStream.CopyTo(fileStream);
 
@@ -157,12 +160,19 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 			try {
 				_ = new ZipArchive(ms, ZipArchiveMode.Read, true);
 
+				string filePath = $"dist/mods/{fileName}";
+				downloadedFiles.Add(filePath);
+
 				ms.Position = 0;
-				using FileStream modFile = File.Create($"dist/mods/{fileName}", checked((int) ms.Length));
+				using FileStream modFile = File.Create(filePath, checked((int) ms.Length));
 				ms.CopyTo(modFile);
 			} catch (InvalidDataException) {
 				_ = Directory.CreateDirectory($"temp/{modName}");
-				using (FileStream tempFile = File.Create($"temp/{modName}/{modName}.dll", checked((int) ms.Length))) {
+
+				string filePath = $"temp/{modName}/{modName}.dll";
+				downloadedFiles.Add(filePath);
+
+				using (FileStream tempFile = File.Create(filePath, checked((int) ms.Length))) {
 					ms.CopyTo(tempFile);
 				}
 
@@ -203,21 +213,21 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 
 await Task.WhenAll(tasks);
 
-#if !DEBUG
-Directory.Delete("temp", true);
-#endif
+apiLinksXml.Save("dist/ApiLinks.xml");
+modLinksXml.Save("dist/ModLinks.xml");
 
-ZipFile.CreateFromDirectory("dist", "dist.zip", CompressionLevel.NoCompression, false);
+downloadedFiles.Sort();
+using (SHA1 sha1 = SHA1.Create()) {
+	using (CryptoStream hashStream = new(Stream.Null, sha1, CryptoStreamMode.Write)) {
+		foreach (string path in downloadedFiles) {
+			using FileStream file = File.OpenRead(path);
+			file.CopyTo(hashStream);
+		}
+	}
 
-using (SHA1 sha1 = SHA1.Create())
-using (FileStream distZip = File.OpenRead("dist.zip")) {
-	byte[] hash = sha1.ComputeHash(distZip);
-	File.WriteAllText("dist/revision.txt", Convert.ToHexString(hash) + '\n');
+	File.WriteAllText("dist/revision.txt", Convert.ToHexString(sha1.Hash!) + '\n');
 }
 
 #if !DEBUG
-File.Delete("dist.zip");
+Directory.Delete("temp", true);
 #endif
-
-apiLinksXml.Save("dist/ApiLinks.xml");
-modLinksXml.Save("dist/ModLinks.xml");
