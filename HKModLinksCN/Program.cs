@@ -6,6 +6,9 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Xml;
 
+string src = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_SRC")
+	?? "https://raw.githubusercontent.com/hk-modding/modlinks/main/";
+
 string urlBase = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_BASE_URL")
 	?? "https://hk-modlinks.clazex.net/";
 
@@ -49,9 +52,7 @@ XmlDocument apiLinksXml = new() {
 	PreserveWhitespace = true
 };
 apiLinksXml.Load(
-	client
-		.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ApiLinks.xml")
-		.Result
+	await client.GetStreamAsync($"{src}ApiLinks.xml")
 );
 
 #endregion
@@ -62,9 +63,7 @@ XmlDocument modLinksXml = new() {
 	PreserveWhitespace = true
 };
 modLinksXml.Load(
-	client
-		.GetStreamAsync("https://raw.githubusercontent.com/hk-modding/modlinks/main/ModLinks.xml")
-		.Result
+	await client.GetStreamAsync($"{src}ModLinks.xml")
 );
 
 #endregion
