@@ -38,10 +38,13 @@ jobs:
 
   deploy-ghproxy:
     runs-on: ubuntu-latest
+    needs: deploy-vercel
 
     env:
       DOTNET_NOLOGO: true
-      HK_MODLINKS_MIRROR_BASE_URL: "https://ghproxy.net/https://raw.githubusercontent.com/Clazex/hk-modlinks-cn/ghproxy/"
+      HK_MODLINKS_MIRROR_SRC: "https://raw.githubusercontent.com/Clazex/hk-modlinks-cn/dist/"
+      HK_MODLINKS_MIRROR_BASE_URL: "https://ghproxy.net/https://raw.githubusercontent.com/Clazex/hk-modlinks-cn/dist/"
+      HK_MODLINKS_MIRROR_REBASE_ONLY: true
 
     steps:
       - name: Checkout
