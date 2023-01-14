@@ -20,6 +20,11 @@ if (!long.TryParse(Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_MAX_AL
 	maxAllowedSize = 512 * 1024 * 1024;
 }
 
+bool rebaseOnly = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_REBASE_ONLY") != null;
+
+string rebaseFromUrl = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_REBASE_FROM_URL")
+	?? "https://hk-modlinks.clazex.net/";
+
 HttpClient client = new();
 List<Task> tasks = new();
 
@@ -33,9 +38,11 @@ try {
 
 Directory.CreateDirectory("dist");
 
-Directory.CreateDirectory("dist/apis");
-Directory.CreateDirectory("dist/mods");
-Directory.CreateDirectory("temp");
+if (!rebaseOnly) {
+	Directory.CreateDirectory("dist/apis");
+	Directory.CreateDirectory("dist/mods");
+	Directory.CreateDirectory("temp");
+}
 
 List<string> downloadedFiles = new();
 
@@ -45,6 +52,30 @@ static int GetApproxSize(HttpContent self) {
 		_ => self.Headers.ContentLength.GetValueOrDefault(0)
 	}));
 }
+
+#region Rebase Only
+
+if (rebaseOnly) {
+	if (string.IsNullOrWhiteSpace(rebaseFromUrl)) {
+		throw new InvalidOperationException("Rebase from URL not specified");
+	}
+
+	File.WriteAllText("dist/revision.txt", await client.GetStringAsync($"{src}revision.txt"));
+	File.WriteAllText(
+		"dist/ApiLinks.xml",
+		await client.GetStringAsync($"{src}/ApiLinks.xml")
+			.ContinueWith(task => task.Result.Replace(rebaseFromUrl, urlBase))
+	);
+	File.WriteAllText(
+		"dist/ModLinks.xml",
+		await client.GetStringAsync($"{src}/ModLinks.xml")
+			.ContinueWith(task => task.Result.Replace(rebaseFromUrl, urlBase))
+	);
+
+	return;
+}
+
+#endregion
 
 #region Download and parse ApiLinks.xml
 
