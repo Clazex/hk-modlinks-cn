@@ -63,6 +63,17 @@ static int GetApproxSize(HttpContent self) {
 	}));
 }
 
+static string ToFileSizeString(long size) {
+	int i = (int) Math.Log(size, 1024);
+	return string.Format("{0:0.##} {1}", size / Math.Pow(1024, i), i switch {
+		_ when i < 0 => throw new ArgumentOutOfRangeException(nameof(size)),
+		0 => "B",
+		1 => "KiB",
+		2 => "MiB",
+		_ => "GiB",
+	});
+}
+
 #region Rebase Only
 
 if (rebaseOnly) {
@@ -137,7 +148,9 @@ IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
 			using Stream resStream = content.ReadAsStream();
 			resStream.CopyTo(fileStream);
 
-			Console.WriteLine($"Downloaded {node.ParentNode.Name} api");
+			long size = new FileInfo(filePath).Length;
+
+			Console.WriteLine($"Downloaded {node.ParentNode.Name} api - {ToFileSizeString(size)}");
 		})
 	);
 
@@ -197,6 +210,8 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 				resStream.CopyTo(ms);
 			}
 
+			long size = ms.Length;
+
 			try {
 				_ = new ZipArchive(ms, ZipArchiveMode.Read, true);
 
@@ -204,7 +219,7 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 				downloadedFiles.Add(filePath);
 
 				ms.Position = 0;
-				using FileStream modFile = File.Create(filePath, checked((int) ms.Length));
+				using FileStream modFile = File.Create(filePath, checked((int) size));
 				ms.CopyTo(modFile);
 			} catch (InvalidDataException) {
 				_ = Directory.CreateDirectory($"temp/{modName}");
@@ -212,7 +227,7 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 				string filePath = $"temp/{modName}/{modName}.dll";
 				downloadedFiles.Add(filePath);
 
-				using (FileStream tempFile = File.Create(filePath, checked((int) ms.Length))) {
+				using (FileStream tempFile = File.Create(filePath, checked((int) size))) {
 					ms.CopyTo(tempFile);
 				}
 
@@ -223,6 +238,8 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 					false
 				);
 
+				size = new FileInfo($"dist/mods/{fileName}").Length;
+
 				Console.WriteLine($"Compressed {name}");
 			}
 
@@ -232,9 +249,9 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 				linkNode.InnerText = urlBase + $"mods/{HttpUtility.HtmlEncode(fileName)}";
 
 				if (name == modName) {
-					Console.WriteLine($"Downloaded {fullModName}");
+					Console.WriteLine($"Downloaded {fullModName} - {ToFileSizeString(size)}");
 				} else {
-					Console.WriteLine($"Downloaded {name} as {fullModName}");
+					Console.WriteLine($"Downloaded {name} as {fullModName} - {ToFileSizeString(size)}");
 				}
 			}
 		});
