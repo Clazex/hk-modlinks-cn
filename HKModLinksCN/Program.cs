@@ -70,7 +70,12 @@ if (rebaseOnly) {
 		throw new InvalidOperationException("Rebase from URL not specified");
 	}
 
-	File.WriteAllText("dist/revision.txt", await client.GetStringAsync($"{src}revision.txt"));
+	try {
+		File.WriteAllText("dist/revision.txt", await client.GetStringAsync($"{src}revision.txt"));
+	} catch (AggregateException e) when (e.InnerException is HttpRequestException) {
+		throw new InvalidOperationException("Source is not a valid mirror");
+	}
+
 	File.WriteAllText(
 		"dist/ApiLinks.xml",
 		await client.GetStringAsync($"{src}/ApiLinks.xml")
