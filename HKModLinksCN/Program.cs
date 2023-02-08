@@ -169,7 +169,8 @@ foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 	string name = modInfo["Name"]!.InnerText;
 
 	XmlNode linkNode = AsGeneric<XmlNode>(modInfo["Link"]!.ChildNodes)
-		.First((node) => node.Name == "#cdata-section");
+		.FirstOrDefault((node) => node.Name == "#cdata-section")
+		?? modInfo["Link"]!;
 
 	string link = linkNode.InnerText;
 
