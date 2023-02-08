@@ -1,3 +1,4 @@
+using System.Collections;
 using System.IO.Compression;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
@@ -26,6 +27,13 @@ bool rebaseOnly = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_REBASE_
 
 string rebaseFromUrl = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_REBASE_FROM_URL")
 	?? "https://hk-modlinks.clazex.net/";
+
+static IEnumerable<T> AsGeneric<T>(IEnumerable enumerable) where T : class {
+	IEnumerator enumerator = enumerable.GetEnumerator();
+	while (enumerator.MoveNext()) {
+		yield return (enumerator.Current as T)!;
+	}
+}
 
 HttpClient client = new();
 List<Task> tasks = new();
@@ -142,13 +150,8 @@ tasks.Clear();
 foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 	string name = modInfo["Name"]!.InnerText;
 
-	XmlNode linkNode = null!;
-	foreach (XmlNode node in modInfo["Link"]!.ChildNodes) {
-		if (node.Name == "#cdata-section") {
-			linkNode = node;
-			break;
-		}
-	}
+	XmlNode linkNode = AsGeneric<XmlNode>(modInfo["Link"]!.ChildNodes)
+		.First((node) => node.Name == "#cdata-section");
 
 	string link = linkNode.InnerText;
 
