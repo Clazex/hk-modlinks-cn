@@ -6,6 +6,8 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Xml;
 
+Console.OutputEncoding = Encoding.UTF8;
+
 string src = Environment.GetEnvironmentVariable("HK_MODLINKS_MIRROR_SRC")
 	?? "https://raw.githubusercontent.com/hk-modding/modlinks/main/";
 
