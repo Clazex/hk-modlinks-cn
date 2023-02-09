@@ -141,7 +141,7 @@ IEnumerable<Task> apiDownloadTasks = new XmlNode[] {
 			node.InnerText = $"{urlBase}apis/{node.ParentNode!.Name}.zip";
 			HttpContent content = task.Result.EnsureSuccessStatusCode().Content;
 
-			string filePath = $"dist/apis/{node.ParentNode.Name}-{apiVersion}.zip";
+			string filePath = $"dist/apis/{node.ParentNode.Name}.zip";
 			downloadedFiles.Add(filePath);
 
 			using FileStream fileStream = File.Create(filePath, GetApproxSize(content));
