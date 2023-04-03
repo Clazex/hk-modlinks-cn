@@ -168,13 +168,13 @@ tasks.Clear();
 foreach (XmlNode modInfo in modLinksXml.GetElementsByTagName("Manifest")) {
 	string name = modInfo["Name"]!.InnerText;
 
-	XmlNode? linkNode = AsGeneric<XmlNode>(modInfo["Link"]!.ChildNodes)
-		.FirstOrDefault((node) => node.Name == "#cdata-section")
-		?? modInfo["Link"];
-
-	if (linkNode == null) { // <Links> is used
+	if (!AsGeneric<XmlNode>(modInfo.ChildNodes).Any(node => node.Name == "Link")) { // <Links> is used
 		continue;
 	}
+
+	XmlNode linkNode = AsGeneric<XmlNode>(modInfo["Link"]!.ChildNodes)
+		.FirstOrDefault((node) => node.Name == "#cdata-section")
+		?? modInfo["Link"]!;
 
 	string link = linkNode.InnerText;
 
